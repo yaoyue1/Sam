@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>账单日期汇总</title>
+     <link rel="stylesheet" type="text/css" href="css/base.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="bk_client_comment financial_manage date_gather">
+      <div class="bread_box">
+             当前位置：<a href="#" class="cur">商品管理</a> > <a href="#" class="blue_link">商品管理</a>
+      </div>
+      <div class="inquire_box">
+             <div class="form_box  clearfix">
+          <div class="items">
+               <label class="form_name">对账业务类型：</label><select><option>网付</option></select>
+          </div>
+          <div class="items">
+               <label class="form_name">匹配状态：</label><select><option>不限</option></select>
+          </div>
+          <div class="items">
+               <label class="form_name">支付网关：</label><select><option>不限</option></select>
+          </div>
+          <div class="items">
+               <label class="form_name">收款账号：</label><select><option>不限</option></select>
+          </div>
+          <div class="items">
+               <label class="form_name">商品编码：</label><input class="ipt txt_ipt"></input>
+          </div>
+          <div class="items">
+               <div class="clearfix">
+                    <label class="form_name">账单日期：</label><input type="text" class="Wdate start_time" onClick="WdatePicker()" /><span class="from_to">-</span><input type="text" class="Wdate end_time" onClick="WdatePicker()"/>
+               </div>
+          </div>
+          <div class="btn_box">
+               <a href="javascript:;" class="deep_blue">查询</a><a href="javascript:;">清空</a>
+          </div>
+     </div>
+      </div>
+      <div class="table_box">
+      <div class="table_handle clearfix">
+           <a href="javascript:;" class="blue_link export_results">导出excel</a>
+      </div>
+      <table cellpadding="0" cellspacing="0" border="0" class="normal_table account_checking" width="980">
+      <thead>
+      <tr>
+           <th>账单日期</th>
+           <th>支付网关</th>
+           <th>收款账号</th>
+           <th>匹配状态</th>
+           <th>订单数</th>
+           <th>应收总金额</th>
+           <th>实收总金额</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      <tr>
+           <td>2016-01-12</td>
+           <td>货基支付</td>
+           <td>YHD_CF</td>
+           <td>匹配成功</td>
+           <td>12</td>
+           <td>679.55</td>
+           <td>679.55</td>
+      </tr>
+      </tbody>
+      </table>
+      <div class="table_handle page_box clearfix">
+           <div class="page-model clearfix financial-record-page fr">
+                <div class="yhdbk-page clearfix">
+                     <a href="javascript:;" class="page-prev"><s></s></a>
+                     <a href="javascript:;" class="page-cur">1</a>
+                     <a href="javascript:;">2</a>
+                     <a href="javascript:;">3</a>
+                     <a href="javascript:;">4</a>
+                     <a href="javascript:;">5</a>
+                     <a href="javascript:;">6</a>
+                     <a href="javascript:;">7</a>
+                     <a href="javascript:;">8</a>
+                     <a href="javascript:;">...</a>
+                     <a href="javascript:;">100</a>
+                     <a href="javascript:;" class="page-next"><s></s></a>
+                     <span class="page-num">
+                         每页显示
+                            <select name="" id="">
+                               <option value="">10</option>
+                               <option value="">20</option>
+                               <option value="">30</option>
+                               <option value="">40</option>
+                               <option value="">50</option>
+                            </select>条
+                    </span>
+                    <span class="page_choose">
+                           第<input type="text" class="ipt">页
+                     </span>
+                     <a href="javascript:;" class="confirm">确定</a>
+                </div>
+           </div>
+      </div>
+      </div>
+ </div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/WdatePicker.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>确认收款</title>
+     <link rel="stylesheet" type="text/css" href="css/base.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="bk_client_comment financial_manage confirm_proceeds">
+<div class="bread_box">
+     当前位置：<a href="#" class="cur">财务管理</a> > <a href="#" class="blue_link">财务付款确认</a>
+</div>
+<div class="inquire_box">
+     <div class="form_box clearfix">
+          <div class="items clearfix">
+               <label class="form_name">门店：</label><select><option>不限</option><option>上海店（0235）</option><option>北京店（5697）</option></select>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">收货人：</label><input class="ipt txt_ipt"></input>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">下单时间：</label><input type="text" class="Wdate start_time" onClick="WdatePicker()" /><span class="from_to">-</span><input type="text" class="Wdate end_time" onClick="WdatePicker()"/>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">收款状态：</label><select><option>不限</option></select>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">应收金额：</label><input class="ipt txt_ipt"></input>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">下单账号：</label><input class="ipt txt_ipt"></input>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">审核状态：</label><select><option>不限</option></select>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">收款人：</label><input class="ipt txt_ipt"></input>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">收款时间：</label><input type="text" class="Wdate start_time" onClick="WdatePicker()" /><span class="from_to">-</span><input type="text" class="Wdate end_time" onClick="WdatePicker()"/>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">商品编码：</label><textarea type="text" class="ipt txt_ipt item_code" > </textarea>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">订单类型：</label><select><option>不限</option></select>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">订单出库时间：</label><input type="text" class="Wdate start_time" onClick="WdatePicker()" /><span class="from_to">-</span><input type="text" class="Wdate end_time" onClick="WdatePicker()"/>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">订单来源：</label><select><option>不限</option></select>
+          </div>
+          <div class="items clearfix">
+               <label class="form_name">业务流水号：</label><input class="ipt txt_ipt"></input>
+          </div>
+          <div class="btn_box clearfix">
+               <a href="javascript:;" class="deep_blue">查询</a><a href="javascript:;">清空</a>
+          </div>
+     </div>
+</div>
+<div class="table_box">
+<div class="table_handle clearfix">
+     <a href="javascript:;" class="blue_link export_results">导出excel</a>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="normal_table account_checking" width="980">
+<thead>
+<tr>
+     <th>门店</th>
+     <th>父单号</th>
+     <th>子单号</th>
+     <th>下单时间</th>
+     <th>订单金额</th>
+     <th>退款金额</th>
+     <th>付款状态</th>
+     <th>应收金额</th>
+     <th>收款金额</th>
+     <th>下单账号</th>
+     <th class="pr20">操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+<tr>
+     <td><p>上海</p><p>0254</p></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td><a href="#" class="blue_link">6960009354456</a></td>
+     <td>
+          <p>2016-01-12</p>
+          <p>15:12:20</p>
+     </td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td>未付款</td>
+     <td>270.55</td>
+     <td>0.00</td>
+     <td> <a href="#" class="blue_link">jack@sina.com</a></td>
+     <td class="pr20 handle_td">
+          <a href="javascript:;" class="blue_link">查看详情</a>
+          <a href="javascript:;" class="blue_link">确认</a>
+     </td>
+</tr>
+</tbody>
+</table>
+<div class="table_handle page_box clearfix">
+     <div class="page-model clearfix financial-record-page fr">
+          <div class="yhdbk-page clearfix">
+               <a href="javascript:;" class="page-prev"><s></s></a>
+               <a href="javascript:;" class="page-cur">1</a>
+               <a href="javascript:;">2</a>
+               <a href="javascript:;">3</a>
+               <a href="javascript:;">4</a>
+               <a href="javascript:;">5</a>
+               <a href="javascript:;">6</a>
+               <a href="javascript:;">7</a>
+               <a href="javascript:;">8</a>
+               <a href="javascript:;">...</a>
+               <a href="javascript:;">100</a>
+               <a href="javascript:;" class="page-next"><s></s></a>
+               <span class="page-num">
+                    每页显示
+                    <select name="" id="">
+                         <option value="">10</option>
+                         <option value="">20</option>
+                         <option value="">30</option>
+                         <option value="">40</option>
+                         <option value="">50</option>
+                    </select>条
+               </span>
+               <span class="page_choose">
+                    第<input type="text" class="ipt">页
+               </span>
+               <a href="javascript:;" class="confirm">确定</a>
+          </div>
+     </div>
+</div>
+</div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/WdatePicker.js"></script>
+</body>
+</html>
