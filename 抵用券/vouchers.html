@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <title>抵用券</title>
+     <link rel="stylesheet" type="text/css" href="css/base.css">
+     <link rel="stylesheet" type="text/css" href="css/yhdbk.css">
+     <link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/vouchers.css">
+</head>
+<body>
+<div class="bk-sales-manager vouchers">
+     <!-- bread -->
+     <div class="bread clearfix">
+          <div class="yhdbk-crumbs-01">
+               <span>您的位置：</span>
+               <a href="#" class="blue-link">营销管理</a>>
+               <a href="#" class="blue-link">抵用券</a>>
+               <span class="cur-page">抵用券管理</span>
+          </div>
+     </div>
+     <!-- /bread -->
+     <div class="vouchers_box">
+          <div class="vouchers_tab_tit clearfix">
+               <p class="clearfix fl">
+                    <a href="javascript:;" class="common_infor cur">抵用券管理</a>
+                    <a href="javascript:;">抵用券数据</a>
+               </p>
+               <a href="#" class="blue_link fr look_help">查看帮助</a>
+          </div>
+          <div class="vouchers_tab_box">
+               <div class="user_describe">
+                    <p class="describe_tit clearfix"><em class="fl"></em><span class="fl">以下三种情况：</span></p>
+                    <ul>
+                         <li>1、抵扣金额超过200元；</li>
+                         <li>2、抵用券折扣低于5.3折；</li>
+                         <li>3、最大发放张数大于50000张。</li>
+                         <li>因需要人工审核，故审核周期较免核周期长，请谅解！</li>
+                    </ul>
+                    <p class="describe_remind">如果在同一时间内同时设置了店铺满减和店铺抵用券，顾客两者都能享受，请谨慎操作。</p>
+               </div>
+               <!--抵用券活动设置-S-->
+               <div class="vouchers_active">
+                    <div class="active_tit">抵用券活动设置</div>
+                    <div class="active_list">
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl clearfix"><em class="black_icon" >*</em><span>使用渠道：</span></label>
+                              <div class="extend fl">
+                                   <p class="radio-wrap"><label class="one_store"><input type="radio" class="radio_btn" name="backstage" checked /><span>1号商城</span></label></p>
+                                   <p class="radio-wrap"><label class="sam_store"><input type="radio" class="radio_btn"  name="backstage" /><span>SAM商城</span></label></p>
+                              </div>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="black_icon" >*</em><span>业务模式：</span></label>
+                              <div class="extend fl">
+                                   <p class="radio-wrap"><label><input type="radio" class="radio_btn" name="type" checked/>B2C</label></p>
+                                   <p class="radio-wrap"><label for="oto"><input type="radio" name="type" class="otoo radio_btn" id="oto"/>O2O</label></p>
+                              </div>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>发券类型：</span></label>
+                              <select class="fl select_right"><option>促销活动发券</option></select>
+                              <p class="fl">审核通过后可绑定促销活动发放</p>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>抵用券使用场景：</span></label>
+                              <select class="fl select_right"><option>通用场景</option></select>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>抵用券使用平台：</span></label>
+                              <div class="extend fl">
+                                   <p class="radio-wrap platform"><label><input type="radio"  class="radio_btn" name="platform" checked />全平台（PC+无线）</label></p>
+                                   <p class="radio-wrap platform"><label><input type="radio"  class="radio_btn"  name="platform" />仅限无线</label></p>
+                              </div>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>抵用券名称：</span></label>
+                              <input type="text" class="input_right fl">
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>抵用券名称：</span></label>
+                             <textarea class="fl txt_right"></textarea>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="fl ac_item_tit"><em class="red_icon" >*</em><span>发券时间：</span></label>
+                              <input type="text" class="Wdate start_time fl" onClick="WdatePicker()" />
+                              <span class="from_to fl">-</span>
+                              <input type="text" class="Wdate end_time fl" onClick="WdatePicker()"/>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>最大发放张（组）数：</span></label>
+                              <input type="text" class="hand_out fl" value="0">
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>每天发放张（组）数：</span></label>
+                              <input type="text" class="hand_out fl" value="0">
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl">每人限领用张（组）数：</label>
+                              <input type="text" class="hand_out fl" value="0">
+                              <p class="fl">限制每个账户领用该活动抵用券的张数或组数</p>
+                         </div>
+                    </div>
+               </div>
+               <!--抵用券活动设置-E-->
+               <!--抵用券规则设置-S-->
+               <div class="vouchers_rule">
+                    <div class="active_tit">抵用券规则设置</div>
+                    <div class="active_list">
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>抵用券金额：</span></label>
+                              <div class="fl mount clearfix"><span class="fl">购满</span><input type="text" value="0" class="fl"><span class="fl">元</span></div>
+                              <div class="fl mount discount clearfix"><span class="fl">抵扣</span><select class="fl"><option>10元</option><option>20元</option></select></div>
+                              <p class="fl">抵用券购满XX元可抵扣的金额</p>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="red_icon" >*</em><span>是否指定时间：</span></label>
+                              <div class="extend fl">
+                                   <p class="radio-wrap time_order"><label><input type="radio" class="radio_btn" name="time" />是</label></p>
+                                   <p class="radio-wrap time_order"><label><input type="radio" class="radio_btn" name="time" checked/>否</label></p>
+                              </div>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="fl ac_item_tit"><span class="red_icon" >*</span><span>抵用券有效时间：</span></label>
+                              <div class="clearfix">
+                                   <input type="text" class="Wdate start_time fl" onClick="WdatePicker()" />
+                                   <span class="from_to fl">-</span>
+                                   <input type="text" class="Wdate end_time fl" onClick="WdatePicker()"/>
+                                   <p class="fl">最多可设置两个月有效期</p>
+                              </div>
+                              <div class="verification clearfix">
+                                   <a href="javascript:;" class="fl">验证</a>
+                                   <p class="fl">验证该段时间是否有满减活动</p>
+                              </div>
+                         </div>
+                         <div class="list_item clearfix">
+                              <label class="ac_item_tit fl"><em class="black_icon" >*</em><span>覆盖地区：</span></label>
+                              <div class="tab-con">
+                                   <!-- tree2 -->
+                                   <div id="treeinit2" class="clearfix">
+                                        <div class="zone_left">
+                                             <p class="zone_tit clearfix">
+                                                  <input type="text" placeholder="搜索品牌" class="search-band" /><a href="javascript:;" class="search-band-btn">搜索</a>
+                                             </p>
+                                             <ul class="ztree ztree_all" id="zone_tree2"></ul>
+                                        </div>
+                                        <div class="zone_center">
+                                             <a href="javascript:;"></a>
+                                        </div>
+                                        <div class="zone_right">
+                                             <p class="remove_all">
+										<span>已选择
+											<b class="text-orange checkCount">0</b>  个
+										</span>
+                                                  <a href="javascript:;" class="clearAll"></a>
+                                             </p>
+                                             <ul class="ztree ztree_all" id="zone_tree_result2"></ul>
+                                        </div>
+                                   </div>
+                                   <!-- /tree2 -->
+                              </div>
+
+                         </div>
+                    </div>
+               </div>
+               <!--抵用券规则设置-E-->
+          </div>
+     </div>
+</div>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="lib/yhdbk.min.js"></script>
+<script type="text/javascript" src="lib/popwin.js"></script>
+<script type="text/javascript" src="js/treeinit.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/vouchers.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>3PL报告</title>
+     <link rel="stylesheet" type="text/css" href="css/base.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="bk_client_comment direct_report">
+     <!--面包屑-->
+     <div class="bread_box">
+          当前位置：<a href="#" class="cur">EC Ops报表</a> > <a href="#" class="blue_link">3PL报告</a>
+     </div>
+     <div class="inquire_box">
+          <div class="form_box  clearfix">
+               <div class="items">
+                    <label class="form_name">日期：</label><input type="text" class="Wdate start_time" onClick="WdatePicker()" /><span class="from_to">-</span><input type="text" class="Wdate end_time" onClick="WdatePicker()"/>
+               </div>
+               <div class="items">
+                    <label class="form_name">送货时间：</label>
+                    <input class="deliver-time ipt" placeholder="09">：<input class="deliver-time ipt" placeholder="00">：<input class="deliver-time ipt" placeholder="00">
+                    <span class="from_to">-</span>
+                    <input class="deliver-time ipt" placeholder="10">：<input class="deliver-time ipt" placeholder="00">：<input class="deliver-time ipt" placeholder="00">
+               </div>
+               <div class="items">
+                    <label class="form_name">订单号：</label><input class="ipt txt_ipt">
+               </div>
+               <div class="items">
+                    <label class="form_name">会员卡号：</label><input class="ipt txt_ipt">
+               </div>
+               <div class="btn_box">
+                    <a href="javascript:;" class="deep_blue">查询</a><a href="javascript:;">清空</a>
+               </div>
+          </div>
+     </div>
+<div class="table_box">
+<div class="table_handle clearfix">
+     <a href="javascript:;" class="export fr"><em></em><span>导出</span></a>
+</div>
+<div class="table_cont">
+     <table cellpadding="0" cellspacing="0" border="0" class="normal_table account_checking">
+          <thead>
+          <tr>
+               <th width="108">时间</th>
+               <th width="108">店号</th>
+               <th width="108">订单号</th>
+               <th width="108">替代订单号</th>
+               <th width="108">会员卡号</th>
+               <th width="108">会员姓名</th>
+               <th width="108">配送地址</th>
+               <th width="108">手机</th>
+               <th width="108">联系电话</th>
+               <th width="108">送货日期</th>
+               <th width="108">箱数</th>
+               <th width="108">订单重量</th>
+               <th width="108">配送方式</th>
+               <th width="108">支付方式</th>
+               <th width="108">定案金额</th>
+               <th width="108">购物卡金额</th>
+               <th width="108">应收款</th>
+               <th width="108">订单金额</th>
+               <th width="108">发货数</th>
+               <th width="108">缺货数</th>
+               <th width="108">备注</th>
+               <th width="108">发货单号</th>
+               <th width="108">包裹号</th>
+               <th width="108">包裹重量</th>
+               <th width="108">是否已发货</th>
+               <th width="108">配送类型</th>
+               <th width="108">送货结果</th>
+               <th width="108">已收款金额/退货金额</th>
+               <th width="108">替代商品是否成功</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          <tr>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>0495</td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>
+                    <a href="#" class="blue_link">1234123415</a>
+               </td>
+               <td>324545645645756745</td>
+               <td>
+                    <a href="#" class="blue_link">黎明</a>
+               </td>
+               <td>祖冲之路295号</td>
+               <td>193850234</td>
+               <td>1803243565</td>
+               <td>4898746646</td>
+               <td>
+                    <p>2016-01-12</p>
+                    <p>15:12:20</p>
+               </td>
+               <td>1</td>
+               <td>9KG</td>
+               <td>网上支付</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>1</td>
+               <td>0</td>
+               <td>备注备注</td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td><a href="#" class="blue_link">1234123415</a></td>
+               <td>8kg</td>
+               <td>是</td>
+               <td>3PL24小时时效</td>
+               <td>妥投</td>
+               <td>0.00</td>
+               <td>是</td>
+          </tr>
+          </tbody>
+     </table>
+</div>
+<div class="table_handle page_box clearfix">
+     <div class="page-model clearfix financial-record-page fr">
+          <div class="yhdbk-page clearfix">
+               <a href="javascript:;" class="page-prev"><s></s></a>
+               <a href="javascript:;" class="page-cur">1</a>
+               <a href="javascript:;">2</a>
+               <a href="javascript:;">...</a>
+               <a href="javascript:;">9</a>
+               <a href="javascript:;" class="page-next"><s></s></a>
+               <span class="page-num">
+                    每页显示
+                    <select name="" id="">
+                         <option value="">10</option>
+                         <option value="">20</option>
+                         <option value="">30</option>
+                         <option value="">40</option>
+                         <option value="">50</option>
+                    </select>条
+               </span>
+               <span class="page_choose">
+                    转到<input type="text" class="ipt">页
+               </span>
+               <a href="javascript:;" class="confirm">确定</a>
+          </div>
+     </div>
+</div>
+</div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/WdatePicker.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>区域分布报告</title>
+     <link rel="stylesheet" type="text/css" href="css/base.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="bk_client_comment direct_report">
+     <!--面包屑-->
+     <div class="bread_box">
+          当前位置：<a href="#" class="cur">EC Ops报表</a> > <a href="#" class="blue_link">区域分部报告</a>
+     </div>
+     <div class="inquire_box">
+          <div class="form_box  clearfix">
+               <div class="items">
+                    <label class="form_name">城市：</label><select><option>请选择</option><option>上海</option><option>北京</option></select>
+               </div>
+               <div class="items">
+                    <label class="form_name">区块：</label>
+                    <div class="select_box block_box">
+                         <input class="ipt txt_ipt input_icon" value="不限、张江、五角场...">
+                         <div class="select_cont none">
+                              <div class="select_top">
+                                   <div class="select_item"><input type="checkbox"><span>不限</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>张江</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>五角场</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>世纪大道</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>中山公园</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>不限</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>张江</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>五角场</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>世纪大道</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>中山公园</span></div>
+                              </div>
+                              <div class="select_btn">
+                                   <a class="yes_btn">确定</a>
+                                   <a class="no_btn">取消</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="items">
+                    <label class="form_name">时间（月）：</label><input class="ipt txt_ipt" placeholder="2016-05">
+               </div>
+               <div class="items">
+                    <label class="form_name">指标：</label>
+                    <div class="select_box  indicatrix">
+                         <input class="ipt txt_ipt input_icon" value="订单量、订单占比、访客率...">
+                         <div class="select_cont none">
+                              <div class="select_top">
+                                   <div class="select_item"><input type="checkbox"><span>不限</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>订单量</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>订单占比</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>访客数</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>转化率</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>不限</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>订单量</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>订单占比</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>访客数</span></div>
+                                   <div class="select_item"><input type="checkbox"><span>转化率</span></div>
+                              </div>
+                              <div class="select_btn">
+                                   <a class="yes_btn">确定</a>
+                                   <a class="no_btn">取消</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="btn_box">
+                    <a href="javascript:;" class="deep_blue">查询</a><a href="javascript:;">清空</a>
+               </div>
+          </div>
+     </div>
+<div class="table_box">
+     <div class="block_item">
+          <div class="block_item_tit clearfix">
+               <h3 class="fl">上海市各区块订单量分析（2016-05）</h3>
+               <a class="fr clearfix export"><em class="fl"></em><span class="fl">导出</span></a>
+          </div>
+          <div class="block_item_cont">
+               <img src="images/order.png" width="950" height="305">
+          </div>
+     </div>
+     <div class="block_item">
+          <div class="block_item_tit clearfix">
+               <h3 class="fl">上海市各区块访客数分析（2016-05）</h3>
+               <a class="fr clearfix export"><em class="fl"></em><span class="fl">导出</span></a>
+          </div>
+          <div class="block_item_cont">
+               <img src="images/visitor.png" width="950" height="305">
+          </div>
+     </div>
+     <div class="block_item">
+          <div class="block_item_tit clearfix">
+               <h3 class="fl">上海市各区块转换率分析（2016-05）</h3>
+               <a class="fr clearfix export"><em class="fl"></em><span class="fl">导出</span></a>
+          </div>
+          <div class="block_item_cont">
+               <img src="images/transform.png" width="950" height="305">
+          </div>
+     </div>
+     <div class="block_item">
+          <div class="block_item_tit clearfix">
+               <h3 class="fl">上海市各区块订单占比（2016-05）</h3>
+               <a class="fr clearfix export"><em class="fl"></em><span class="fl">导出</span></a>
+          </div>
+          <div class="block_item_cont clearfix">
+               <div class="circle_pic">
+                    <img class="fl" src="images/circle.png" width="155" height="155">
+                    <div class="fl discribe">
+                         <div class="top_bar circle_bar"><span></span><em>张江高科</em></div>
+                         <div class="bottom_bar circle_bar"><span></span><em>世纪大道</em></div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/WdatePicker.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

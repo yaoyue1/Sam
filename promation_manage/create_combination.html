@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+	<title>创建组合促销</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/yhdbk.css">
+	<link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/promation.css">
+</head>
+<body>
+<!-- bk-sales-manager -->
+<div class="bk-sales-manager promotion-manage">
+	<!-- bread -->
+	<div class="bread clearfix">
+		<div class="yhdbk-crumbs-01">
+			<span>您的位置：</span>
+			<a href="#" class="blue-link">营销管理</a>>
+			<a href="#" class="blue-link">促销管理</a>>
+			<span class="cur-page">创建满减满送促销</span>
+		</div>
+		<a href="#" class="blue-link enter-help">进入商家帮助中心</a>
+	</div>
+	<!-- /bread -->
+	<!-- bk-sales-md -->
+	<div class="bk-sales-md set-sales-info">
+		<h2>设置促销基本信息</h2>
+		<div class="bk-sales-con">
+			<div class="set-list clearfix">
+				<label class="form-name">促销名称：</label>
+				<div class="extend">
+					<input type="text" class="sales-name"></input>
+				</div>
+		              <p class="error-tip">请填写促销名称</p>
+			</div>
+			<div class="set-list clearfix">
+				<label class="form-name">促销时间：</label>
+				<div class="extend">
+					<div class="clearfix">
+						<input type="text" class="same-text first-time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked:pickedFunc})">
+						<em class="time-connect">—</em>
+						<input type="text" class="same-text last-time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked:pickedLast})">
+					</div>
+					<div class="continue-days clearfix mt none">
+						<a href="javascript:" class="yhdbk-button-04">持续<em>3</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>5</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>7</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>30</em>天</a>
+					</div>					
+				</div>
+				<p class="error-tip">请填写促销名称</p>
+			</div>
+            <div class="set-list clearfix">
+                 <label class="form-name">促销渠道：</label>
+                 <div class="extend tab-tit">
+                      <p class="radio-wrap"><input type="radio" name="backstage" /><label>SAM后台</label></p>
+                      <p class="radio-wrap"><input type="radio" name="backstage" checked/><label>YHD后台</label></p>
+                 </div>
+            </div>
+            <div class="set-list clearfix">
+                 <label class="form-name">门  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;店：</label>
+                 <div class="extend tab-tit fl store">
+                           <div class="ckeck-all"><label><input type="checkbox" name="store" checked />全选</label></div>
+                           <ul>
+                                <li><label><input type="checkbox" name="store" />深圳店（0254）</label></li>
+                                <li><label><input type="checkbox" name="store" />北京店（5644）</label></li>
+                                <li><label><input type="checkbox" name="store" />上海店（1235）</label></li>
+                                <li><label><input type="checkbox" name="store" />大连店（6589）</label></li>
+                                <li><label><input type="checkbox" name="store" />大连店（6589）</label></li>
+                                <li><label><input type="checkbox" name="store" />广州店（1135）</label></li>
+                                <li><label><input type="checkbox" name="store" />福州店（5688）</label></li>
+                                <li><label><input type="checkbox" name="store" />杭州店（6987）</label></li>
+                                <li><label><input type="checkbox" name="store" />苏州店（3256）</label></li>
+                                <li><label><input type="checkbox" name="store" />苏州店（3256）</label></li>
+                                <li><label><input type="checkbox" name="store" />武汉店（1256）</label></li>
+                                <li><label><input type="checkbox" name="store" />常州店（6598）</label></li>
+
+                           </ul>
+                 </div>
+            </div>
+            <div class="set-list clearfix">
+                 <label class="form-name">促销名称：</label>
+                 <div class="extend">
+                      <select type="text" class="sales-name select"><option>请选择</option><option>大货</option><option>DSV</option><option>鲜食</option></select>
+                 </div>
+                 <p class="error-tip">请填写促销名称</p>
+            </div>
+            <div class="set-list clearfix">
+                 <label class="form-name">会籍商品：</label>
+                 <div class="extend tab-tit">
+                      <p class="radio-wrap"><input type="radio" name="membership" /><label>是</label></p>
+                      <p class="radio-wrap"><input type="radio" name="membership" /><label>否</label></p>
+                 </div>
+            </div>
+			<div class="set-list clearfix">
+				<label class="form-name">选择商品：</label>
+				<div class="extend">
+					<ul class="tab-tit clearfix">
+						<li>
+							<input type="radio" name="goods-choose" /><label>全场</label>
+							<a href="javascript:;" class="blue-link btn-exclude-goods none">添加排除商品</a>
+						</li>
+						<li>
+							<input type="radio" name="goods-choose" /><label>按分类添加</label>
+						</li>
+						<li>
+							<input type="radio" name="goods-choose" /><label>按品牌添加</label>
+						</li>
+						<li>
+							<input type="radio" name="goods-choose" /><label>按商品添加</label>
+							<a href="javascript:;" class="blue-link btn-add-goods none">添加商品</a>
+						</li>
+					</ul>
+					<div class="tab-con-box mt none clearfix">
+						<div class="tab-con"></div>
+						<div class="tab-con">
+							<!-- tree1 -->
+							<div id="treeinit1" class="clearfix">
+								<div class="zone_left">
+									<p class="zone_tit">
+										<label class="fl ml"><input type="checkbox" class="checkAll">全选</label>类目
+									</p>
+									<ul class="ztree ztree_all" id="zone_tree1"></ul>
+								</div>
+								<div class="zone_center">
+									<a href="javascript:;"></a>
+								</div>
+								<div class="zone_right">
+									<p class="remove_all">
+										<span>已选择
+											<b class="text-orange checkCount">0</b>  个，还剩
+											<b class="text-orange nocheckCount">14</b>个可选
+										</span>
+										<a href="javascript:;" class="clearAll"></a>
+									</p>
+									<ul class="ztree ztree_all" id="zone_tree_result1"></ul>
+								</div>
+							</div>	
+							<!-- /tree1 -->
+							<!-- table -->
+							<div class="box-table mt">
+								<div class="table-hd">
+									<p class="excluded-goods">已排除商品（排除商品不参与本次促销，上限100个）：<a href="javascript:;" class="btn-exclude-goods yhdbk-button-01 add-good">添加排除商品</a></p>
+									<input type="checkbox" id="check_all" class="fl table-choose-all"/>
+									<label class="fl plr8" for="check_all">全选</label>
+									<div class="box-click">
+										<a href="javascript:" class="blue_link btn-whether-sure" >批量删除</a>
+										<i class="icon-hover-normal icon-hover-up"></i>
+										<div class="btn-whether-cancel">
+											<button class="yhdbk-button-01 pop-close">确定</button>
+											<button class="yhdbk-button-03 ml pop-close">取消</button>
+										</div>
+									</div>									
+								</div>
+								<table cellspacing="0" cellpadding="0" class="tab-header mt">
+									<thead>
+										<tr>
+											<th width="30" class="clearfix">
+												<!-- <input type="checkbox" class="tab-check tab-check-parents"> -->
+											</th>
+											<th width="78">商品图片</th>
+											<th width="235">商品名称</th>
+                                            <th width="106">门店</th>
+											<th width="66">价格(元)</th>
+											<th width="98">子品设置</th>
+											<th width="66">操作</th>
+										</tr>
+									</thead>
+								</table>
+								<div class="tab-body correlation-table">
+									<table cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="clearfix" width="40">
+													<input type="checkbox" class="tab-check tab-check-son">
+												</td>
+												<td width="78">
+													<img src="http://temp.im/58x47" width="58" height="47">
+												</td>
+												<td width="235">
+													<a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+												</td>
+                                                <td width="106">深圳店（0256）</td>
+												<td width="66">260</td>
+												<td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+												<td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+											</tr>
+                                            <tr>
+                                                 <td class="clearfix" width="40">
+                                                      <input type="checkbox" class="tab-check tab-check-son">
+                                                 </td>
+                                                 <td width="78">
+                                                      <img src="http://temp.im/58x47" width="58" height="47">
+                                                 </td>
+                                                 <td width="235">
+                                                      <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                                 </td>
+                                                 <td width="106">深圳店（0256）</td>
+                                                 <td width="66">260</td>
+                                                 <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                                 <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                            </tr>
+                                            <tr>
+                                                 <td class="clearfix" width="40">
+                                                      <input type="checkbox" class="tab-check tab-check-son">
+                                                 </td>
+                                                 <td width="78">
+                                                      <img src="http://temp.im/58x47" width="58" height="47">
+                                                 </td>
+                                                 <td width="235">
+                                                      <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                                 </td>
+                                                 <td width="106">深圳店（0256）</td>
+                                                 <td width="66">260</td>
+                                                 <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                                 <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                            </tr>
+                                            <tr>
+                                                 <td class="clearfix" width="40">
+                                                      <input type="checkbox" class="tab-check tab-check-son">
+                                                 </td>
+                                                 <td width="78">
+                                                      <img src="http://temp.im/58x47" width="58" height="47">
+                                                 </td>
+                                                 <td width="235">
+                                                      <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                                 </td>
+                                                 <td width="106">深圳店（0256）</td>
+                                                 <td width="66">260</td>
+                                                 <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                                 <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                            </tr>
+                                            <tr>
+                                                 <td class="clearfix" width="40">
+                                                      <input type="checkbox" class="tab-check tab-check-son">
+                                                 </td>
+                                                 <td width="78">
+                                                      <img src="http://temp.im/58x47" width="58" height="47">
+                                                 </td>
+                                                 <td width="235">
+                                                      <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                                 </td>
+                                                 <td width="106">深圳店（0256）</td>
+                                                 <td width="66">260</td>
+                                                 <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                                 <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                            </tr>
+                                        </tbody>
+									</table>
+								</div>
+							</div>
+                             <div class="page fr">
+                                  <div class="yhdbk-page clearfix">
+                                       <a href="javascript:;" class="page-prev"><s></s></a>
+                                       <a href="javascript:;" class="page-cur">1</a>
+                                       <a href="javascript:;">2</a>
+                                       <a href="javascript:;">3</a>
+                                       <a href="javascript:;">4</a>
+                                       <a href="javascript:;">5</a>
+                                       <a href="javascript:;">6</a>
+                                       <a href="javascript:;">7</a>
+                                       <a href="javascript:;">8</a>
+                                       <a href="javascript:;">...</a>
+                                       <a href="javascript:;">100</a>
+                                       <a href="javascript:;" class="page-next"><s></s></a>
+									<span class="page-num">
+										每页显示
+										<select name="" id="">
+                                             <option value="">10</option>
+                                             <option value="">20</option>
+                                             <option value="">30</option>
+                                             <option value="">40</option>
+                                             <option value="">50</option>
+                                        </select>条
+									</span>
+									<span class="page_choose">
+										第<input type="text" class="ipt">页
+									</span>
+                                       <a href="javascript:;" class="confirm">确定</a>
+                                  </div>
+                             </div>
+							<!-- /table -->							
+						</div>
+						<div class="tab-con">
+							<!-- tree2 -->
+							<div id="treeinit2" class="clearfix">
+								<div class="zone_left">
+									<p class="zone_tit clearfix">
+										<input type="text" placeholder="搜索品牌" class="search-band" /><a href="javascript:;" class="search-band-btn">搜索</a>
+									</p>
+									<ul class="ztree ztree_all" id="zone_tree2"></ul>
+								</div>
+								<div class="zone_center">
+									<a href="javascript:;"></a>
+								</div>
+								<div class="zone_right">
+									<p class="remove_all">
+										<span>已选择
+											<b class="text-orange checkCount">0</b>  个，还剩
+											<b class="text-orange nocheckCount">14</b>个可选
+										</span>
+										<a href="javascript:;" class="clearAll"></a>
+									</p>
+									<ul class="ztree ztree_all" id="zone_tree_result2"></ul>
+								</div>
+							</div>	
+							<!-- /tree2 -->
+							<!-- table -->
+							<div class="box-table mt">
+                                 <div class="table-hd">
+                                      <p class="excluded-goods">已排除商品（排除商品不参与本次促销，上限100个）：<a href="javascript:;" class="btn-exclude-goods yhdbk-button-01 add-good">添加排除商品</a></p>
+                                      <input type="checkbox" id="check_all" class="fl table-choose-all"/>
+                                      <label class="fl plr8"  for="check_all" >全选</label>
+                                      <div class="box-click">
+                                           <a href="javascript:" class="blue_link btn-whether-sure" >批量删除</a>
+                                           <i class="icon-hover-normal icon-hover-up"></i>
+                                           <div class="btn-whether-cancel">
+                                                <button class="yhdbk-button-01 pop-close">确定</button>
+                                                <button class="yhdbk-button-03 ml pop-close">取消</button>
+                                           </div>
+                                      </div>
+                                 </div>
+								<table cellspacing="0" cellpadding="0" class="tab-header mt">
+									<thead>
+										<tr>
+											<th width="30" class="clearfix">
+												<!-- <input type="checkbox" class="tab-check tab-check-parents"> -->
+											</th>
+                                             <th width="78">商品图片</th>
+                                             <th width="235">商品名称</th>
+                                             <th width="106">门店</th>
+                                             <th width="66">价格(元)</th>
+                                             <th width="98">子品设置</th>
+                                             <th width="66">操作</th>
+										</tr>
+									</thead>
+								</table>
+								<div class="tab-body correlation-table">
+									<table cellspacing="0" cellpadding="0">
+                                         <tbody>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         </tbody>
+									</table>
+								</div>
+							</div>
+                             <div class="page fr">
+                                  <div class="yhdbk-page clearfix">
+                                       <a href="javascript:;" class="page-prev"><s></s></a>
+                                       <a href="javascript:;" class="page-cur">1</a>
+                                       <a href="javascript:;">2</a>
+                                       <a href="javascript:;">3</a>
+                                       <a href="javascript:;">4</a>
+                                       <a href="javascript:;">5</a>
+                                       <a href="javascript:;">6</a>
+                                       <a href="javascript:;">7</a>
+                                       <a href="javascript:;">8</a>
+                                       <a href="javascript:;">...</a>
+                                       <a href="javascript:;">100</a>
+                                       <a href="javascript:;" class="page-next"><s></s></a>
+									<span class="page-num">
+										每页显示
+										<select name="" id="">
+                                             <option value="">10</option>
+                                             <option value="">20</option>
+                                             <option value="">30</option>
+                                             <option value="">40</option>
+                                             <option value="">50</option>
+                                        </select>条
+									</span>
+									<span class="page_choose">
+										第<input type="text" class="ipt">页
+									</span>
+                                       <a href="javascript:;" class="confirm">确定</a>
+                                  </div>
+                             </div>
+							<!-- /table -->							
+						</div>
+						<div class="tab-con">
+							<!-- table -->
+							<div class="box-table mt">
+								<div class="table-hd">
+									<input type="checkbox" id="check_all" class="fl table-choose-all"/>
+									<label class="fl plr8" for="check_all">全选</label>
+									<div class="box-click">
+										<a href="javascript:" class="blue_link btn-whether-sure" >批量删除</a>
+										<i class="icon-hover-normal icon-hover-up"></i>
+										<div class="btn-whether-cancel">
+											<button class="yhdbk-button-01 pop-close">确定</button>
+											<button class="yhdbk-button-03 ml pop-close">取消</button>
+										</div>
+									</div>									
+								</div>
+								<table cellspacing="0" cellpadding="0" class="tab-header mt">
+									<thead>
+										<tr>
+											<th width="30" class="clearfix">
+												<!-- <input type="checkbox" class="tab-check tab-check-parents"> -->
+											</th>
+											<th width="66">商品图片</th>
+											<th width="166">商品名称</th>
+											<th width="66">价格(元)</th>
+											<th width="66">商品分类</th>
+											<th width="80">子品设置</th>
+											<th width="66">操作</th>
+										</tr>
+									</thead>
+								</table>
+								<div class="tab-body correlation-table">
+									<table cellspacing="0" cellpadding="0">
+                                         <tbody>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         <tr>
+                                              <td class="clearfix" width="40">
+                                                   <input type="checkbox" class="tab-check tab-check-son">
+                                              </td>
+                                              <td width="78">
+                                                   <img src="http://temp.im/58x47" width="58" height="47">
+                                              </td>
+                                              <td width="235">
+                                                   <a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+                                              </td>
+                                              <td width="106">深圳店（0256）</td>
+                                              <td width="66">260</td>
+                                              <td width="98"><a href="javascript:;" class="blue-link btn-setup-son">设置子品</a></td>
+                                              <td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+                                         </tr>
+                                         </tbody>
+									</table>
+								</div>
+							</div>							
+							<!-- /table -->							
+						</div>
+					</div>
+				</div>
+				<p class="error-tip">请填写促销商品</p>
+			</div>
+            <div class="set-list clearfix">
+                 <label class="form-name">限制促销：</label>
+                 <div class="extend clearfix">
+                      <p class="limit">限制每个账户购买<input type="text" placeholder="不限" />次</p>
+                      <p class="tips checkbox-wrap">
+                           <input type="checkbox" /><label>促销活动上不封顶</label>
+                           <a href="javascript:void(0);" class="yhdbk-icon yhdbk-icon-08 tooltip-right"></a>
+                           <span class="sptooltip-content none">如果选择是，表示支持活动优惠递增，例如满100减10，满200减20</span>
+                      </p>
+                 </div>
+            </div>
+		</div>
+	</div>
+	<!-- /bk-sales-md -->
+	<!-- bk-sales-md -->
+	<div class="bk-sales-md set-sales-rule">
+		<h2>设置促销规则</h2>
+		<div class="bk-sales-con">
+			<a href="javascript:;" class="yhdbk-button-01 add-new-level">增加新一级促销</a>
+			<ul class="sub-tab-tit clearfix">
+				<li class="cur"><a href="javascript:;">会员等级1</a></li>
+			</ul>
+			<div class="sub-tab-con">
+				<div class="tab-con-main">
+					<div class="set-list clearfix">
+						<label class="form-name">优惠条件：</label>
+						<div class="extend clearfix limit">满
+							<input type="text" />
+							<select>
+								<option value="">件</option>
+								<option value="">元</option>
+							</select>
+						</div>
+						 <p class="error-tip">请设置优惠条件</p>
+						 <p class="error-tip">优惠条件应大于上一层级</p>
+					</div>
+					<div class="set-list clearfix">
+						<label class="form-name">促销内容：</label>
+						<div class="extend clearfix">
+							<p class="radio-wrap"><input type="radio" name="sales-main" />打<input type="text" class="sales-num" />折</p>
+							<p class="radio-wrap"><input type="radio" name="sales-main" />减<input type="text" class="sales-num" />元</p>
+                             <div class="sales-details-box">
+                                  <p class="sales-type checkbox-wrap"><input type="checkbox" class="sales-details-checkbox" /><label>门店优惠码</label> <a href="javascript:;" class="blue-link btn-add-goods">添加</a></p>
+                                  <div class="sales-items none">
+                                       <!-- table -->
+                                       <div class="box-table mt">
+                                            <table cellspacing="0" cellpadding="0" class="tab-header mt">
+                                                 <thead>
+                                                 <tr>
+                                                      <th width="107">编码</th>
+                                                      <th width="310">名称</th>
+                                                      <th width="96">抵扣金额</th>
+                                                      <th width="172">有限时间</th>
+                                                      <th width="76">操作</th>
+                                                 </tr>
+                                                 </thead>
+                                            </table>
+                                            <div class="tab-body">
+                                                 <table cellspacing="0" cellpadding="0">
+                                                      <tbody>
+                                                      <tr>
+                                                           <td width="107">
+                                                                5648949
+                                                           </td>
+                                                           <td width="310">
+                                                                元宵节优惠狂欢到底，快来买买买优惠不停
+                                                           </td>
+                                                           <td width="96">
+                                                                56.0
+                                                           </td>
+                                                           <td width="172">
+                                                                2015.09.11 ~ 2015.09.30
+                                                           </td>
+                                                           <td width="76"><a href="javascript:;" class="blue-link">删除</a></td>
+                                                      </tr>
+                                                      </tbody>
+                                                 </table>
+                                            </div>
+                                       </div>
+                                       <!-- /table -->
+                                  </div>
+                             </div>
+                             <div class="sales-details-box">
+								<p class="sales-type checkbox-wrap"><input type="checkbox" class="sales-details-checkbox" /><label>送赠品</label><a href="javascript:;" class="blue-link btn-add-goods">添加商品</a></p>
+								<div class="sales-items none">
+									<!-- table -->
+									<div class="box-table mt">
+										<table cellspacing="0" cellpadding="0" class="tab-header mt">
+											<thead>
+												<tr>
+													<th width="66"></th>
+													<th width="200">商品信息</th>
+													<th width="130">单用户赠送数量</th>
+													<th width="275">总数限制</th>
+													<th width="66">操作</th>
+												</tr>
+											</thead>
+										</table>
+										<div class="tab-body h180">
+											<table cellspacing="0" cellpadding="0">
+												<tbody>
+													<tr>
+														<td width="66">
+															<img src="http://temp.im/58x47" width="58" height="47">
+														</td>
+														<td width="200">
+															<a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+														</td>
+														<td width="130">
+															<input type="text" class="sales-num" value="3" />
+															<a href="javascript:;" class="blue-link total-set ">以下统一设置为该值</a>
+														</td>
+														<td width="275">
+                                                             <input type="text" class="sales-num total-limit" value="5" />
+															<a href="javascript:;" class="blue-link total-set">以下统一设置为该值</a>
+														</td>
+														<td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+													</tr>
+													<tr>
+														<td width="66">
+															<img src="http://temp.im/58x47" width="58" height="47">
+														</td>
+														<td width="166">
+															<a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+														</td>
+														<td width="130">
+															<input type="text" class="sales-num" value="3" />
+                                                             <a href="javascript:;" class="blue-link total-set">以下统一设置为该值</a>
+														</td>
+														<td width="265">
+                                                             <input type="text" class="sales-num total-limit" value="5" />
+                                                             <a href="javascript:;" class="blue-link total-set">以下统一设置为该值</a>
+														</td>
+														<td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+													</tr> 
+													<tr>
+														<td width="66">
+															<img src="http://temp.im/58x47" width="58" height="47">
+														</td>
+														<td width="166">
+															<a href="#" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+														</td>
+														<td width="130">
+															<input type="text" class="sales-num" value="3" />
+                                                             <a href="javascript:;" class="blue-link total-set">以下统一设置为该值</a>
+														</td>
+														<td width="265">
+                                                             <input type="text" class="sales-num total-limit" value="5" />
+                                                             <a href="javascript:;" class="blue-link total-set">以下统一设置为该值</a>
+														</td>
+														<td width="66"><a href="javascript:;" class="blue-link">删除</a></td>
+													</tr> 											
+												</tbody>
+											</table>
+										</div>
+									</div>							
+									<!-- /table -->
+								</div>
+							</div>
+						</div>
+						 <p class="error-tip">请设置促销内容</p>
+					</div>
+					<dl class="exist-sales-level">
+						<dt>已有促销层级</dt>
+						<dd>满5件：打9折</dd>
+						<dd>满6件：打9折</dd>
+				   	</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /bk-sales-md -->
+</div>
+<!-- bk-sales-ft -->
+<div class="bk-sales-ft">
+	<p>
+		<a href="javascript:;" class="yhdbk-button-02 btn-create-success">创建促销</a><a href="javascript:;" class="yhdbk-button-03 btn-whether-delete">取消</a>
+	</p>
+</div>
+<!-- /bk-sales-ft -->
+<!-- /bk-sales-manager -->
+<!-- 设置子品弹框 -->
+<div class="Ag-common-dialog pop-setup-son">
+	<div class="Acd-rel-dialog">
+		<a href="javascript:" class="dialog-main-close pop-close"></a>
+		<div class="Acd-rel-head">
+			<h3>设置子品</h3>
+		</div>
+		<div class="Acd-rel-body">
+			<div class="box-table">
+				<table cellspacing="0" cellpadding="0" class="tab-header">
+					<thead>
+						<tr>
+							<th width="80" class="clearfix">
+								<input type="checkbox" class="tab-check tab-check-parents">
+								<span class="tab-check-name">全选</span>
+							</th>
+							<th width="120">尺寸/尺码</th>
+							<th width="100">颜色</th>
+							<th width="100">商品分类</th>
+							<th width="100">1号店价</th>
+						</tr>
+					</thead>
+				</table>
+				<div class="tab-body h178">
+					<table cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td width="80">
+									<input type="checkbox" class="tab-check-son">
+								</td>
+								<td width="120">S</td>
+								<td width="100">蓝色</td>
+								<td width="100">220.2</td>
+								<td width="100">￥1000</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son">
+								</td>
+								<td>S</td>
+								<td>蓝色</td>
+								<td>220.2</td>
+								<td>￥1000</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son">
+								</td>
+								<td>S</td>
+								<td>蓝色</td>
+								<td>220.2</td>
+								<td>￥1000</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son">
+								</td>
+								<td>S</td>
+								<td>蓝色</td>
+								<td>220.2</td>
+								<td>￥1000</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son">
+								</td>
+								<td>S</td>
+								<td>蓝色</td>
+								<td>220.2</td>
+								<td>￥1000</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son">
+								</td>
+								<td>S</td>
+								<td>蓝色</td>
+								<td>220.2</td>
+								<td>￥1000</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son">
+								</td>
+								<td>S</td>
+								<td>蓝色</td>
+								<td>220.2</td>
+								<td>￥1000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="box-error none">请选择商品</div>
+			<div class="box-page clearfix">
+				<div class="yhdbk-page fr clearfix">
+					<span class="page-num">每页显示
+						<select name="" id="">
+							<option value="">30</option>
+						</select>
+					</span>
+					<a href="javascript:void(0)" class="page-start">首页</a>
+					<a href="javascript:void(0)" class="page-prev"><s></s>上一页</a>
+					<a href="javascript:void(0)" class="page-cur">1</a>
+					<a href="javascript:void(0)">2</a>
+					<a href="javascript:void(0)">3</a>
+					<a href="javascript:void(0)">4</a>
+					<a href="javascript:void(0)">5</a>
+					<a href="javascript:void(0)" class="page-next">下一页<s></s></a>
+					<a href="javascript:void(0)" class="page-end">末页</a>
+				</div>
+			</div>
+			<div class="txt-center mt">
+				<button class="yhdbk-button-01 whether-choose ">确定</button>
+				<button class="yhdbk-button-03 ml pop-close">取消</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /设置子品弹框 -->
+<!--添加排除商品弹窗-->
+<div class="Ag-common-dialog pop-exclude-goods">
+	<div class="Acd-rel-dialog">
+		<a href="javascript:" class="dialog-main-close pop-close"></a>
+		<div class="Acd-rel-head">
+			<h3>添加排除商品</h3>
+		</div>
+		<div class="Acd-rel-body">
+			<div class="search-box">
+				<ul class="clearfix">
+					<li>
+						<label>商品类别：</label>
+						<div class="all-goods"></div>
+					</li>
+					<li>
+						<label>品牌：</label>
+						<input type="text">
+					</li>
+					<li>
+						<label>商品名称：</label>
+						<input type="text">
+					</li>
+					<li>
+						<label>促销状态：</label>
+						<select>
+							<option>全部</option>
+							<option>未开始</option>
+							<option>进行中</option>
+						</select>
+					</li>
+					<li>
+						<label>商品编号：</label>
+						<textarea></textarea>
+					</li>            		
+				</ul>	
+				<a href="javascript:;" class="yhdbk-button-01">搜索</a>			
+			</div>
+			<div class="box-table mt">
+				<table cellspacing="0" cellpadding="0" class="tab-header">
+					<thead>
+						<tr>
+							<th width="116" class="clearfix">
+								<input type="checkbox" class="tab-check tab-check-parents">
+								<span class="tab-check-name">商品编号</span>
+							</th>
+							<th width="66">商品图片</th>
+							<th width="166">商品名称</th>
+							<th width="66">说明</th>
+							<th width="66">商品分类</th>
+							<th width="66">品牌</th>
+							<th width="86">促销标签</th>
+							<th width="91">价格(元)</th>
+						</tr>
+					</thead>
+				</table>
+				<div class="tab-body h240">
+					<table cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td class="clearfix" width="116">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td width="66">
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td width="166">
+									<a class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td width="66">系列品</td>
+								<td width="66">家纺</td>
+								<td width="66">罗莱</td>
+								<td width="86">
+									满减满送<br>156975464
+								</td>
+								<td width="91">260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>
+									<div class="sales-activity hover-box">
+										<a href="javascript:" class="blue_link hover-tit">5个促销活动</a>
+										<i class="icon-hover icon-hover-up"></i>
+										<div class="hover-con sptooltip-con">
+											<ul class="sales-activity-list">
+												<li>满减满送 狂欢11月</li>
+												<li>单品折扣 全场7折</li>
+												<li>满减满送 买就送</li>
+												<li>满减满送 狂欢11月</li>
+												<li>单品折扣 全场7折</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>
+									单品折扣<br>156975464
+								</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>无</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>无</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>无</td>
+								<td>260</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="box-error none">请选择商品</div>
+			<div class="box-page clearfix">
+				<div class="yhdbk-page fr clearfix">
+					<span class="page-num">
+						条目总数：<em>521</em>每页显示
+						<select name="" id="">
+							<option value="">20</option>
+							<option value="">30</option>
+							<option value="">40</option>
+						</select>
+					</span>
+					<a href="javascript:void(0)" class="page-start">首页</a>
+					<a href="javascript:void(0)" class="page-prev"><s></s>上一页</a>
+					<a href="javascript:void(0)" class="page-cur">1</a>
+					<a href="javascript:void(0)">2</a>
+					<a href="javascript:void(0)">3</a>
+					<a href="javascript:void(0)">4</a>
+					<a href="javascript:void(0)">5</a>
+					<a href="javascript:void(0)" class="page-next">下一页<s></s></a>
+					<a href="javascript:void(0)" class="page-end">末页</a>
+				</div>
+			</div>
+			<div class="txt-center mt">
+				<button class="yhdbk-button-01 whether-choose ">确定</button>
+				<button class="yhdbk-button-03 ml pop-close">取消</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/添加排除商品弹窗-->
+<!--添加商品弹窗-->
+<div class="Ag-common-dialog pop-add-goods">
+	<div class="Acd-rel-dialog">
+		<a href="javascript:" class="dialog-main-close pop-close"></a>
+		<div class="Acd-rel-head">
+			<h3>添加商品</h3>
+		</div>
+		<div class="Acd-rel-body">
+			<div class="search-box">
+				<ul class="clearfix">
+					<li>
+						<label>商品类别：</label>
+						<div class="all-goods"></div>
+					</li>
+					<li>
+						<label>品牌：</label>
+						<input type="text">
+					</li>
+					<li>
+						<label>商品名称：</label>
+						<input type="text">
+					</li>
+					<li>
+						<label>促销状态：</label>
+						<select>
+							<option>全部</option>
+							<option>未开始</option>
+							<option>进行中</option>
+						</select>
+					</li>
+					<li>
+						<label>商品编号：</label>
+						<textarea></textarea>
+					</li>            		
+				</ul>	
+				<a href="javascript:;" class="yhdbk-button-01">搜索</a>			
+			</div>
+			<div class="box-table mt">
+				<table cellspacing="0" cellpadding="0" class="tab-header">
+					<thead>
+						<tr>
+							<th width="116" class="clearfix">
+								<input type="checkbox" class="tab-check tab-check-parents">
+								<span class="tab-check-name">商品编号</span>
+							</th>
+							<th width="66">商品图片</th>
+							<th width="166">商品名称</th>
+							<th width="66">说明</th>
+							<th width="66">商品分类</th>
+							<th width="66">品牌</th>
+							<th width="86">促销标签</th>
+							<th width="91">价格(元)</th>
+						</tr>
+					</thead>
+				</table>
+				<div class="tab-body h240">
+					<table cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td class="clearfix" width="116">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td width="66">
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td width="166">
+									<a class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td width="66">系列品</td>
+								<td width="66">家纺</td>
+								<td width="66">罗莱</td>
+								<td width="86">
+									满减满送<br>156975464
+								</td>
+								<td width="91">260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>
+									<div class="sales-activity hover-box">
+										<a href="javascript:" class="blue_link hover-tit">5个促销活动</a>
+										<i class="icon-hover icon-hover-up"></i>
+										<div class="hover-con sptooltip-con">
+											<ul class="sales-activity-list">
+												<li>满减满送 狂欢11月</li>
+												<li>单品折扣 全场7折</li>
+												<li>满减满送 买就送</li>
+												<li>满减满送 狂欢11月</li>
+												<li>单品折扣 全场7折</li>
+											</ul>
+										</div>
+									</div>
+								</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>
+									单品折扣<br>156975464
+								</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>无</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>无</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<input type="checkbox" class="tab-check tab-check-son">
+									<span class="tab-check-name">1235689451</span>
+								</td>
+								<td>
+									<img src="http://temp.im/58x47" width="58" height="47">
+								</td>
+								<td>
+									<a href="javascript:" class="tab-goods-name">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>系列品</td>
+								<td>家纺</td>
+								<td>罗莱</td>
+								<td>无</td>
+								<td>260</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="box-error none">请选择商品</div>
+			<div class="box-page clearfix">
+				<div class="yhdbk-page fr clearfix">
+					<span class="page-num">
+						条目总数：<em>521</em>每页显示
+						<select name="" id="">
+							<option value="">20</option>
+							<option value="">30</option>
+							<option value="">40</option>
+						</select>
+					</span>
+					<a href="javascript:void(0)" class="page-start">首页</a>
+					<a href="javascript:void(0)" class="page-prev"><s></s>上一页</a>
+					<a href="javascript:void(0)" class="page-cur">1</a>
+					<a href="javascript:void(0)">2</a>
+					<a href="javascript:void(0)">3</a>
+					<a href="javascript:void(0)">4</a>
+					<a href="javascript:void(0)">5</a>
+					<a href="javascript:void(0)" class="page-next">下一页<s></s></a>
+					<a href="javascript:void(0)" class="page-end">末页</a>
+				</div>
+			</div>
+			<div class="txt-center mt">
+				<button class="yhdbk-button-01 whether-choose ">确定</button>
+				<button class="yhdbk-button-03 ml pop-close">取消</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/添加商品弹窗-->
+<!--创建成功弹窗-->
+<div class="Ag-common-dialog pop-create-success">
+    <div class="Acd-rel-dialog">
+        <div class="Acd-rel-body txt-center">
+            <span class="tipBox-success"></span>
+            <h3 class="tipBox-oneway">创建成功</h3>
+        </div>
+    </div>
+</div>
+<!--/创建成功弹窗-->
+<!--促销冲突弹窗-->
+<div class="Ag-common-dialog pop-conflict-tips">
+	<div class="Acd-rel-dialog">
+		<a href="javascript:" class="dialog-main-close pop-close"></a>
+		<div class="Acd-rel-head">
+			<h3>如下商品同期促销冲突</h3>
+		</div>
+		<div class="Acd-rel-body">
+			<div class="box-table">
+				<table cellspacing="0" cellpadding="0" class="tab-header">
+					<thead>
+						<tr>
+							<th width="296" class="clearfix">
+								<input type="checkbox" class="tab-check tab-check-parents">
+								<span class="tab-check-name">商品信息</span>
+							</th>
+							<th width="126">促销名称</th>
+							<th width="96">促销范围</th>
+							<th width="126">促销时间</th>
+							<th width="96">操作</th>
+						</tr>
+					</thead>
+				</table>
+				<div class="tab-body h260">
+					<table cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td width="296">
+									<input type="checkbox" class="tab-check-son conflict-tips-check">
+									<img src="http://temp.im/67x52" width="67" height="52" class="fl">
+									<a href="javascript:" class="blue_link conflict-tips-tit">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td width="126">国庆好机惠，买一送一</td>
+								<td width="96">商城平台</td>
+								<td width="126">
+									<p>2015.09.01 00:00:00</p>
+									<p>至</p>
+									<p>2015.09.01 00:00:00</p>
+								</td>
+								<td width="96" rowspan="2"><a href="javascript:" class="blue_link">删除同类商品</a> </td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son conflict-tips-check">
+									<img src="http://temp.im/67x52" width="67" height="52" class="fl">
+									<a href="javascript:" class="blue_link conflict-tips-tit">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td >国庆好机惠，买一送一</td>
+								<td>商城平台</td>
+								<td>
+									<p>2015.09.01 00:00:00</p>
+									<p>至</p>
+									<p>2015.09.01 00:00:00</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son conflict-tips-check">
+									<img src="http://temp.im/67x52" width="67" height="52" class="fl">
+									<a href="javascript:" class="blue_link conflict-tips-tit">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>国庆好机惠，买一送一</td>
+								<td>商城平台</td>
+								<td>
+									<p>2015.09.01 00:00:00</p>
+									<p>至</p>
+									<p>2015.09.01 00:00:00</p>
+								</td>
+								<td><a href="javascript:" class="blue_link">删除同类商品</a> </td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son conflict-tips-check">
+									<img src="http://temp.im/67x52" width="67" height="52" class="fl">
+									<a href="javascript:" class="blue_link conflict-tips-tit">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>国庆好机惠，买一送一</td>
+								<td>商城平台</td>
+								<td>
+									<p>2015.09.01 00:00:00</p>
+									<p>至</p>
+									<p>2015.09.01 00:00:00</p>
+								</td>
+								<td><a href="javascript:" class="blue_link">删除同类商品</a> </td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="tab-check-son conflict-tips-check">
+									<img src="http://temp.im/67x52" width="67" height="52" class="fl">
+									<a href="javascript:" class="blue_link conflict-tips-tit">罗莱儿童 罗莱公司出品 床上用品 全棉罗莱公司······</a>
+								</td>
+								<td>国庆好机惠，买一送一</td>
+								<td>商城平台</td>
+								<td>
+									<p>2015.09.01 00:00:00</p>
+									<p>至</p>
+									<p>2015.09.01 00:00:00</p>
+								</td>
+								<td><a href="javascript:" class="blue_link">删除同类商品</a> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="box-error none">请选择商品</div>
+			<div class="box-page clearfix">
+				<div class="yhdbk-page fr clearfix">
+					<span class="page-num">每页显示
+						<select name="" id="">
+							<option value="">30</option>
+						</select>
+					</span>
+					<a href="javascript:void(0)" class="page-start">首页</a>
+					<a href="javascript:void(0)" class="page-prev"><s></s>上一页</a>
+					<a href="javascript:void(0)" class="page-cur">1</a>
+					<a href="javascript:void(0)">2</a>
+					<a href="javascript:void(0)">3</a>
+					<a href="javascript:void(0)">4</a>
+					<a href="javascript:void(0)">5</a>
+					<a href="javascript:void(0)" class="page-next">下一页<s></s></a>
+					<a href="javascript:void(0)" class="page-end">末页</a>
+				</div>
+			</div>
+			<div class="txt-center mt">
+				<button class="yhdbk-button-03 whether-choose">删除选中冲突商品</button>
+				<div class="box-click">
+					<button class="yhdbk-button-02 btn-whether-sure">终止店铺内冲突促销</button>
+					<i class="icon-hover icon-hover-down"></i>
+					<div class="hover-con click-con">
+						<button class="yhdbk-button-01 pop-close">确定</button>
+						<button class="yhdbk-button-03 ml pop-close">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/促销冲突提示-->
+<!--是否取消创建弹窗-->
+<div class="Ag-common-dialog pop-whether-delete">
+	<div class="Acd-rel-dialog">
+		<a class="pop-close dialog-main-close" href="javascript:;"></a>
+		<div class="Acd-rel-body txt-center">
+			<div class="pop-words">是否取消创建？</div>
+			<div class="">
+				<button class="yhdbk-button-01 pop-close">是</button>
+				<button class="yhdbk-button-03 ml pop-close">否</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--是否取消创建弹窗-->
+</body>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="lib/yhdbk.min.js"></script>
+<script type="text/javascript" src="lib/popwin.js"></script>
+<script type="text/javascript" src="js/treeinit.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+$(function () {
+
+       treeSet1(); //初始化树1结构     
+       treeSet2(); //初始化树2结构     
+       hoverShow();//鼠标hover显示详情
+        popWin();//弹框
+
+	//表格全选
+	$('.table-choose-all').change(function(){
+		if ($(this).is(":checked")) {
+			$(this).parents().siblings('.correlation-table').find('table').find('input.tab-check-son').attr('checked',true);
+		}else{
+			$(this).parents().siblings('.correlation-table').find('table').find('input.tab-check-son').removeAttr('checked');
+		}
+	})
+});
+//初始化树1结构  
+function treeSet1(){
+       var zNodes_gl1 = [{
+	      	name: "服装鞋帽",
+	      	children: [{
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      	}]
+	      },
+	      {
+	      	name: "美容护理",
+	      	children: [{
+	      		name: "11111"
+	      	},
+	      	{
+	      		name: "22222"
+	      	},
+	      	{
+	      		name: "33333"
+	      	}]
+	      },
+	      {
+	      	name: "母婴",
+	      	children: [{
+	      		name: "44444"
+	      	},
+	      	{
+	      		name: "55555"
+	      	},
+	      	{
+	      		name: "66666"
+	      	}]
+	      },
+	      {
+	      	name: "厨卫清洁",
+	      	children: [{
+	      		name: "44444"
+	      	},
+	      	{
+	      		name: "55555"
+	      	},
+	      	{
+	      		name: "66666"
+	      	},
+	      	{
+	      		name: "66666"
+	      	},
+	      	{
+	      		name: "66666"
+	      	}]
+	      },
+	      {
+	      	name: "服装鞋帽",
+	      	children: [{
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      	}]
+	      },
+	      {
+	      	name: "美容护理",
+	      	children: [{
+	      		name: "11111"
+	      	},
+	      	{
+	      		name: "22222"
+	      	},
+	      	{
+	      		name: "33333"
+	      	}]
+	      },
+	      {
+	      	name: "母婴",
+	      	children: [{
+	      		name: "44444"
+	      	},
+	      	{
+	      		name: "55555"
+	      	},
+	      	{
+	      		name: "66666"
+	      	}]
+	      },
+	      {
+	      	name: "厨卫清洁",
+	      	children: [{
+	      		name: "44444"
+	      	},
+	      	{
+	      		name: "55555"
+	      	},
+	      	{
+	      		name: "66666"
+	      	},
+	      	{
+	      		name: "66666"
+	      	},
+	      	{
+	      		name: "66666"
+	      	}]
+      }];
+      initTree($("#treeinit1"), $("#zone_tree1"), $("#zone_tree_result1"), zNodes_gl1);	
+}
+//初始化树2结构  
+function treeSet2(){
+       var zNodes_gl1 = [{
+	      	name: "1号商城",
+	      	children: [{
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      },
+	      {
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      },
+	      {
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      }]
+      }];
+      initTree($("#treeinit2"), $("#zone_tree2"), $("#zone_tree_result2"), zNodes_gl1);	
+};
+//弹框
+function popWin(){
+	//设置子品
+	$(".btn-setup-son").click(function(){
+		$(this).PopupDialog({
+			popupClass:'.pop-setup-son',
+			maskLayer:true
+		});
+	});	
+	//添加排除商品
+	$(".btn-exclude-goods").click(function(){
+		$(this).PopupDialog({
+			popupClass:'.pop-exclude-goods',
+			maskLayer:true
+		});
+	});
+	//添加商品
+	$(".btn-add-goods").click(function(){
+		$(this).PopupDialog({
+			popupClass:'.pop-add-goods',
+			maskLayer:true
+		});
+	});
+	//创建成功
+	$(".btn-create-success").click(function(){
+		$(this).PopupDialog({
+			popupClass:'.pop-create-success',
+			maskLayer:true,
+			delayClose:3
+		});
+	});
+	//  促销冲突弹窗
+	$(".btn-conflict-tips").click(function(){
+		$(this).PopupDialog({
+			popupClass:'.pop-conflict-tips',
+			maskLayer:true
+		});
+	});
+	//是否取消创建
+	$(".btn-whether-delete").click(function(){
+		$(this).PopupDialog({
+			popupClass:'.pop-whether-delete',
+			maskLayer:true
+		});
+	}); 
+}
+//日历
+var date;
+function pickedFunc(){
+	$(this).parent().next('.continue-days').show();
+	var s = $(".first-time").val();
+	var arr =  s.split(/-|-|\s|:/);
+	date = (new Date(arr[0],arr[1],arr[2],arr[3],arr[4])).getTime();
+	return date;
+}
+function pickedLast() {
+	$('.continue-days').hide();
+}
+$(".continue-days a").click(function(){
+	var txt = parseInt($(this).find("em").text());
+	var addTime = txt*24*60*60*1000;
+	if($(".first-time").val()==''){
+		alert("请选择开始时间");
+		return false;
+	}
+	var lastTime =date+addTime;
+	var format = function(time, format){
+		var t = new Date(time);
+		var tf = function(i){return (i < 10 ? '0' : '') + i};
+		return format.replace(/yyyy|MM|dd|HH|mm|ss/g, function(a){
+			switch(a){
+				case 'yyyy':
+				return tf(t.getFullYear());
+				break;
+				case 'MM':
+				return tf(t.getMonth() + 1);
+				break;
+				case 'mm':
+				return tf(t.getMinutes());
+				break;
+				case 'dd':
+				return tf(t.getDate());
+				break;
+				case 'HH':
+				return tf(t.getHours());
+				break;
+				case 'ss':
+				return tf(t.getSeconds());
+				break;
+			}
+		})
+	}
+	$(".last-time").val(format(lastTime, 'yyyy-MM-dd HH:mm:ss'));
+	$(this).parent('.continue-days').hide();
+});
+//鼠标hover显示详情
+function hoverShow(){
+	$(".tooltip-right").sptooltip({
+	    placement: 'right'
+	});	
+}
+</script>
+</html>

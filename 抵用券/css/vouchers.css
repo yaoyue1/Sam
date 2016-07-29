@@ -1,0 +1,80 @@
+/*
+ *Description : 抵用券 ;
+ *Author : yaoyue;
+ *Date : 2016/05/16;
+**/
+
+
+/*抵用券-S*/
+.vouchers_box{font-family:"simsun";font-size:12px;}
+.vouchers_box .vouchers_tab_tit{position:relative;padding-top:20px;height:29px;border-bottom:1px solid #dedede;}
+.vouchers_box .vouchers_tab_tit p{position:absolute;bottom:-1px;}
+.vouchers_box .vouchers_tab_tit p a{float:left;margin-left:4px;padding:8px 18px;background:#f3f3f3;color:#0066cc;border:1px solid #dedede;}
+.vouchers_box .vouchers_tab_tit .common_infor{margin-left:8px;}
+.vouchers_box .vouchers_tab_tit .cur{border-bottom:none;background:#fff;border-bottom:1px solid #fff;}
+.vouchers .look_help{line-height:30px;}
+.user_describe{width:1008px;height:150px;margin-top:10px;border:1px solid #ffdca7;background:#fffde5;color:#ff8500}
+.user_describe .describe_tit{margin-top:10px;padding-left:24px;}
+.user_describe .describe_tit em{display:inline-block;width:14px;height:14px;background:url("../images/icon_sprite.png") no-repeat;background-position:0 0;}
+.user_describe ul{margin-left:40px;}
+.user_describe ul li{line-height:20px;}
+.describe_remind{margin:20px 0 0 40px;}
+
+/*抵用券活动设置-S*/
+.vouchers_active{margin-top:10px;}
+.active_tit{height:20px;padding-left:15px;line-height:20px;background:#ebeff3;font-family:"simsun";color:#666;}
+.list_item{margin-top:10px;}
+.list_item .ac_item_tit{display:inline-block;width:154px;height:25px;line-height:25px;color:#999;text-align:right;}
+.list_item .ac_item_tit .red_icon{color:#fd1902;margin-right:4px;}
+.list_item .ac_item_tit .black_icon{color:#999;margin-right:4px;}
+.list_item .select_right{width:154px;height:24px;padding:2px 3px;color:#666;outline:none;border:1px solid #ccc}
+.list_item p{color:#666;margin-left:12px;line-height:25px;}
+.list_item .radio-wrap{width:70px;overflow:hidden;margin-left:0;}
+.list_item input{vertical-align:top;}
+.list_item .radio-wrap input{margin-left:3px;outline:none;}
+.list_item .input_right{width:154px;height:20px;padding:2px 3px;color:#666;outline:none;line-height:26px;border:1px solid #ccc}
+.list_item  .txt_right{width:665px;height:65px;color:#666;outline:none;border:1px solid #ccc;resize:none;line-height:26px;}
+.list_item  .Wdate{width:160px;height:25px;color:#666;outline:none;border:1px solid #ccc;resize:none;text-indent:5px;line-height:27px;}
+.list_item .hand_out{width:72px;height:20px;padding:2px 3px;color:#c90100;font-weight:bold;outline:none;line-height:20px;border:1px solid #ccc}
+.list_item .platform{width:130px;}
+.list_item  .radio_btn{margin-top:-2px;}
+/*抵用券活动设置-E*/
+
+/*抵用券规则设置-S*/
+.vouchers_rule{margin-top:25px;}
+.vouchers_rule .mount{color:#666;outline:none;line-height:25px;}
+.vouchers_rule .mount input{width:75px;height:20px;margin:0 10px 0 10px;padding:2px 3px;line-height:20px;color:#c90100;font-weight:bold;outline:none;border:1px solid #ccc}
+.vouchers_rule .mount select{width: 87px;margin-left:8px;outline:none;height:25px;color:#c90100;font-weight:bold;border:1px solid #ccc}
+.vouchers_rule .list_item .discount{margin-left:22px;}
+.from_to{margin:0 6px 0 6px;line-height:25px;}
+.verification{margin:10px 0 0 154px;}
+.verification a{display:inline-block;width:55px;height:25px;line-height:25px;color:#f86e01;background:url("../images/sprite.png") no-repeat;background-position:-130px -198px;text-align:center;}
+.list_item .time_order{width:40px;}
+/*抵用券规则设置-E*/
+
+
+/*ztree - S*/
+.bk-sales-manager .zone_left .zone_tit input{margin-right:5px;vertical-align: middle;}
+.bk-sales-manager .zone_left .zone_tit a { line-height: 25px; position: relative; top: 1px; display: inline-block; width: 97px; height: 25px; text-align: center; border-top: solid 1px #dedede; border-bottom: solid 1px #dedede; background: #f5f5f5; }
+.bk-sales-manager .zone_left .zone_tit .search-band{float: left;width: 122px;height:16px;margin: 2px 5px;padding: 2px 3px;border: solid 1px #e4e4e4;outline: none;}
+.bk-sales-manager .zone_left .zone_tit .search-band-btn{float: left;width: 52px;height: 22px;margin-top: 1px;background-color: #f99a34;border: none;color: #fff;line-height: 22px;font-weight: bold;}
+.bk-sales-manager .zone_left .zone_tit .search-band-btn:hover{background-color: #fbb66a;}
+.bk-sales-manager .zone_left { float: left; width: 200px; height: 280px; border-right: solid 1px #dedede; border-bottom: solid 1px #dedede; border-left: solid 1px #dedede; }
+.bk-sales-manager .zone_left .zone_tit { line-height: 27px; position: relative; height: 26px; background: #f5f5f5; margin-left: 0; text-align: center; border-bottom: solid 1px #dedede; border-top: solid 1px #dedede; }
+.bk-sales-manager .zone_left .zone_tit input{margin-right:5px;vertical-align: middle;}
+.bk-sales-manager .zone_left .zone_tit a { line-height: 25px; position: relative; top: 1px; display: inline-block; width: 97px; height: 25px; text-align: center; border-top: solid 1px #dedede; border-bottom: solid 1px #dedede; background: #f5f5f5; }
+.bk-sales-manager .zone_center { float: left; width: 36px; height: 280px; }
+.bk-sales-manager .zone_center a { display: block; width: 16px; height: 16px; margin-top: 130px; margin-left: 10px; background: -461px -114px; }
+.bk-sales-manager .zone_right { float: left; width: 200px; height: 279px; border: solid 1px #dedede; }
+.bk-sales-manager .zone_right p.remove_all { line-height: 27px; position: relative; height: 26px; margin-left: 0; padding-left: 15px; text-align: left; border-bottom: solid 1px #dedede; }
+.bk-sales-manager .zone_right p.remove_all a { position: absolute; top: 7px; right: 9px; width: 13px; height: 18px; background: url(../images/ljt_png.png) no-repeat; }
+.bk-sales-manager .ztree { padding: 0; height: 252px; overflow-y: scroll; overflow-x: hidden; }
+.bk-sales-manager .ztree li span.button.chk { -display: none; }
+.bk-sales-manager .ztree li { margin: 5px 0; padding: 2px 5px; }
+.bk-sales-manager .ztree li span.button.noline_close { width: 11px; height: 11px; margin-right: 10px; background: url("../images/ztree-expand.png") no-repeat; }
+.bk-sales-manager .ztree li span.button.noline_open { width: 11px; height: 11px; margin-right: 10px; background: url("../images/ztree-expand.png") no-repeat; background-position: -11px 0px; }
+.bk-sales-manager .ztree li a.curSelectedNode { background: transparent; border: none; }
+.bk-sales-manager .ztree li a { display: inline-block; width: 150px; }
+.aera_define {margin:10px 0 0 154px;}
+/*ztree - E*/
+/*抵用券-E*/

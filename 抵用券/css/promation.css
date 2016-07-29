@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*
+ *Description :  促销管理;
+ *Author : yuting;
+ *Date : 2015/03/10;
+**/
+
+/*创建促销组合-S*/
+.promotion-manage{background:#fff;}
+.promotion-manage .set-sales-info .set-list .store{padding-bottom:14px;width:715px;border:1px solid #cdcdcd;}
+.promotion-manage .set-sales-info .set-list .store ul li{margin:14px 18px 0 18px;}
+.promotion-manage .set-sales-info .set-list .ckeck-all{margin:14px 0 0 18px;}
+.promotion-manage .set-sales-info .set-list .ckeck-all input{margin-right:5px;}
+.promotion-manage .set-sales-info .set-list .extend .select{height:24px;}
+.promotion-manage .set-sales-info .tab-body{overflow:inherit;border-bottom:none;}
+.promotion-manage .add-good{background:#feeac9;color:#f87200;font-weight:normal;}
+.promotion-manage .page .yhdbk-page a{float:inherit;}
+.promotion-manage .page .yhdbk-page .page-num{float:inherit;}
+.promotion-manage .page .yhdbk-page .confirm{background:#feeac9;color:#f87200;border:1px solid #feeac9; }
+.promotion-manage .page .yhdbk-page input{margin:0 2px 0 2px;width:35px;height:20px;outline:none;border:1px solid #dfdfdf;}
+.promotion-manage .page .yhdbk-page span{margin-left: 10px;}
+.promotion-manage .page{margin-top:10px;}
+.promotion-manage .page .yhdbk-page .page-prev s{top:4px;left:3px;}
+.promotion-manage .page .yhdbk-page .page-next s{top:4px;right:3px;}
+.promotion-manage .btn-add-goods{margin-left:12px;}
+/*创建促销组合-E*/

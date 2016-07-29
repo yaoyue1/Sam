@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>新增门店</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="spell-group">
+    <!--title 20151223-S-->
+    <h3 class="sg-title clearfix"><p class="fl"><em>当前位置：</em><a href="#">配送管理</a><span class="sgt-gt">&gt;</span><a href="#">门店管理</a><span class="sgt-gt">&gt;</span><a href="#" class="blue_link">新增门店</a></p></h3>
+    <!--title 20151223-E-->
+
+     <div class="common-infor same-mod clearfix">
+          <p>基本信息</p>
+          <div class="clearfix">
+               <div class="infor-left fl">
+                    <ul class="sgq-cont-editor clearfix add-cont">
+                         <li class="sgq-cont-list clearfix">
+                              <label class="titi-itm">门店名称：</label>
+                              <input class="text" type="text"/>
+                         </li>
+                         <li class="sgq-cont-list clearfix">
+                              <label class="titi-itm">门店联系人：</label>
+                              <input class="text" type="text"/>
+                         </li>
+                         <li class="sgq-cont-list clearfix">
+                              <label class="titi-itm">门店联系电话：</label>
+                              <input class="text" type="text"/>
+                         </li>
+                    </ul>
+               </div>
+               <div class="infor-right fl">
+                    <label class="fl titi-itm">门店住址：</label>
+                    <textarea class="fl"></textarea>
+               </div>
+          </div>
+          <ul class="store-state clearfix">
+               <li class="sgq-cont-list clearfix">
+                    <label class="titi-itm">门店状态：</label>
+                        <label class="focus"><input  class="radio-btn" type="radio" name="states" checked/> 开启</label>
+                         <label class="focus"><input  class="radio-btn" type="radio" name="states"/> 关闭</label>
+                         <label class="focus"><input  class="radio-btn" type="radio" name="states"/> 暂停营业</label>
+               </li>
+               <li class="sgq-cont-list clearfix">
+                    <label class="titi-itm">配送方式：</label>
+                    <div class="sgq-cont-pull">
+                         <input class="text distribution" type="text" value="用户自提"/>
+                         <div class="scp-select distribution">
+                              <a href="javascript:;" class="cur">1号店配送</a>
+                              <a href="javascript:;">自有配送</a>
+                              <a href="javascript:;">用户自提</a>
+                         </div>
+                    </div>
+               </li>
+          </ul>
+          <div class="oprating-time clearfix">
+               <label class="fl item-tit">运营时间：</label>
+               <div class="fl">
+               <div class="time-infor">
+                    <h4>时段1</h4>
+                    <div class="item-box clearfix">
+                         <label class="fl">适用时间:</label>
+                         <div class="fl time-box week">
+                              <label><input type="checkbox"/> 星期日</label>
+                              <label><input type="checkbox"/> 星期一</label>
+                              <label><input type="checkbox"/> 星期二</label>
+                              <label><input type="checkbox"/> 星期三</label>
+                              <label><input type="checkbox"/> 星期四</label>
+                              <label><input type="checkbox"/> 星期五</label>
+                              <label><input type="checkbox"/> 星期六</label>
+                         </div>
+                    </div>
+                    <div class="item-box clearfix">
+                         <label class="fl">配送时段:</label>
+                         <div class="fl time-box">
+                              <input  type="text" placeholder="08：00" class="time-ipt"/>
+                              <span class="from-to">-</span>
+                              <input type="text"  class="time-ipt"  placeholder="12：00"/>
+                         </div>
+                    </div>
+                    <div class="item-box clearfix">
+                         <label class="fl">配送时效:</label>
+                         <div class="fl time-box">
+                              <input type="text" class="time-ipt"/>
+                              <span>小时送达</span>
+                         </div>
+                    </div>
+               </div>
+               <div class="time-infor clearfix">
+                    <h4>时段2</h4>
+                    <a href="javascript:;" class="delete-btn fr blue_link">删除</a>
+                    <div class="item-box clearfix">
+                         <label class="fl">适用时间:</label>
+                         <div class="fl time-box week">
+                              <label><input type="checkbox"/> 星期日</label>
+                              <label><input type="checkbox"/> 星期一</label>
+                              <label><input type="checkbox"/> 星期二</label>
+                              <label><input type="checkbox"/> 星期三</label>
+                              <label><input type="checkbox"/> 星期四</label>
+                              <label><input type="checkbox"/> 星期五</label>
+                              <label><input type="checkbox"/> 星期六</label>
+                         </div>
+                    </div>
+                    <div class="item-box clearfix">
+                         <label class="fl">配送时段:</label>
+                         <div class="fl time-box">
+                              <input type="text" placeholder="08：00" class="time-ipt"/>
+                              <span class="from-to">-</span>
+                              <input type="text" placeholder="12：00" class="time-ipt"/>
+                         </div>
+                    </div>
+                    <div class="item-box clearfix">
+                         <label class="fl">配送时效:</label>
+                         <div class="fl time-box">
+                              <input type="text" class="time-ipt"/>
+                              <span>小时送达</span>
+                         </div>
+                    </div>
+               </div>
+               <a href="javascript:;" class="sgq-title-btn mt-10"><i class="icon-add"></i>运营时段</a>
+          </div>
+          </div>
+     </div>
+
+     <!-- 新增门店_表格 -zhangchunjiang -2016.03.17  -S -->
+     <div class="district_maintain_box">
+          <p>配送范围</p>
+          <!-- table -2016.03.17 -S -->
+          <div class="sg-table-box clearfix">
+               <label class="fl">门店覆盖范围：</label>
+               <div class="sg-table fl">
+                    <div class="shopad-table-handle clearfix">
+                         <a href="javascript:;" class="sgq-title-btn"><i class="icon-add"></i>覆盖范围（通过地图）</a>
+                         <a href="javascript:;" class="sgq-title-btn"><i class="icon-add"></i>覆盖范围（通过四级地址）</a>
+                         <a class="blue_link del-batch" href="javascript:">批量删除</a>
+                    </div>
+                    <div class="table-head-box">
+                         <table cellpadding="0" cellspacing="0">
+                              <thead>
+                              <tr>
+                                   <th width="4%"><input type="checkbox" class="table_check"></th>
+                                   <th width="26%">省/市/区</th>
+                                   <th width="55%">区块名称</th>
+                                   <th width="20%" class="operat_box">操作</th>
+                              </tr>
+                              </thead>
+                         </table>
+                    </div>
+                    <div class="table-body-box">
+                         <table cellpadding="0" cellspacing="0">
+                              <tbody>
+                              <tr>
+                                   <td width="4%">
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td width="26%">上海市杨浦区</td>
+                                   <td  width="57%" >五角场街道</td>
+                                   <td width="13%">
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr class="sg-table-grey">
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >四平路街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >五角场街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr class="sg-table-grey">
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >四平路街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >五角场街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr class="sg-table-grey">
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >四平路街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >五角场街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr class="sg-table-grey">
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >四平路街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >五角场街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              <tr class="sg-table-grey">
+                                   <td>
+                                        <input class="table_check" type="checkbox">
+                                   </td>
+                                   <td>上海市杨浦区</td>
+                                   <td >四平路街道</td>
+                                   <td>
+                                        <a class="blue_link sgt-handle" href="javascript:;">删除</a>
+                                   </td>
+                              </tr>
+                              </tbody>
+                         </table>
+                    </div>
+               </div>
+          </div>
+
+          <!-- table -2016.03.17 -E -->
+          <div class="save-box clearfix">
+               <a class="keep-btn" href="javascript:;">保存</a>
+               <a class="keep-btn" href="javascript:;">取消</a>
+          </div>
+     </div>
+     <!-- 新增门店_表格 -zhangchunjiang -2016.03.17  -E -->
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</html>

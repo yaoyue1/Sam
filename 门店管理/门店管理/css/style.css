@@ -1,0 +1,134 @@
+/*
+ *@Description: 商家后台拼团页面css
+ *@Author: zhangqian7
+ *@Update: zhangqian7(2015-12-23)
+ */
+.spell-group{width: 1010px; margin: 0 auto;}
+/*title 20151223-S*/
+.sg-title{height: 32px; border-bottom: 1px solid #e6e6e6; color: #666; font-size: 12px; font-weight: normal; line-height: 32px;}
+.sgt-gt{padding: 0 8px; font-family: aril;}
+.sgt-links{display: inline-block; float: right; color: #0066cc;}
+.sgt-links:hover{color: #0099cc;}
+/*title 20151223-E*/
+
+/*query 20151223-S*/
+.icon-add{display: inline-block; position: absolute; top: 8px; left: 10px; width: 14px; height: 14px; background: url("../images/sprite.png") no-repeat 0 0;}
+.sgq-title-btn:hover{background-color: #ff6600; color: #fff;}
+.sgq-cont{border: 1px solid #e6e6e6; background-color: #f7f7f7;}
+.sgq-cont-list{float: left; height: 28px; margin-top: 20px;}
+.sgq-cont-list .titi-itm{display: inline-block; float: left; width: 100px;overflow: hidden; color: #666; text-align: right; line-height: 28px;}
+.sgq-cont-list .text{display: inline-block; float: left; width:295px; height: 26px; text-indent:5px;margin: 0 0 0 10px; border: 1px solid #ccc; outline: none; background-color: #fff; color: #999; line-height: 26px;}
+.sgq-cont-list .scl-time{float: left; margin: 0 30px 0 10px;}
+.scl-time .text{width: 68px; margin: 0; padding: 0 17px 0 10px;}
+.sgq-cont-list .ipt{width:440px;}
+.scl-time span{display: inline-block; float: left; padding: 0 10px; line-height: 26px;}
+.sgq-cont-pull{position: relative; float: left;}
+.sgq-cont-pull .text{float: none; width: 178px; padding: 0 30px 0 10px; background: #fff url("../images/iconArrow.png") no-repeat 197px 10px; cursor: pointer;}
+.sgq-cont-pull .downtown{width:100px;}
+.sgq-cont-pull .area{width:60px;background-position:80px 10px;}
+.scp-select{display: none; position: absolute; top: 27px; left: 10px; width: 218px; z-index: 888; border: 1px solid #ccc; background-color: #fff;}
+.scp-select a{display: block; height: 24px; padding: 0 10px; color: #999; line-height: 24px;}
+.scp-select a:hover,.scp-select a.cur{background-color: #96c8f1; color: #fff;}
+.sgq-cont-list .area-box{margin-left:-24px;}
+.sgq-btn{margin: 30px 0 22px; text-align: center;}
+.sgq-btn a{display: inline-block; width:75px; height: 28px; margin: 0 10px; border: 1px solid #f99a34; border-radius: 2px; background-color: #fff; color: #f99a34; font-weight: bold; text-align: center; line-height: 28px;}
+.sgq-btn .sgq-btn-sure{background-color: #f99a34; color: #fff;}
+.sgq-btn a:hover{background-color: #ff6600; color: #fff;}
+/*query 20151223-E*/
+
+
+
+/*pages 20151223-S*/
+.sg-pages{padding: 20px 0;}
+.sg-pages-result{float: left; color: #666;}
+.sg-pages-result span{color: #f99a34;}
+.page-num {float: right; vertical-align: middle; text-align: right;}
+.page-num a { display: inline-block; height: 20px; margin: 0 3px; padding: 0 7px;color: #999; font-family: Arial, Helvetica, sans-serif; text-align: center; line-height: 20px;}
+.page-num a:hover,.page-num a.select{ background: none repeat scroll 0 0 #fbb86d; color: #fff; text-decoration: none; }
+.page-num a.select{background-color: #e0e0e0;}
+.page-num a.page{display: inline-block; width: auto; padding: 0 10px; border: 0 none; color: #999; }
+.page-num a.page:hover{ border: 0 none; color: #fbb86d; text-decoration: none; }
+.page-up .numinput { padding: 0 5px; width: 25px; height: 18px; margin-bottom: 5px; border: 1px solid #B5B8C8; text-align: center; }
+.change { background-color: #207499; }
+.page-num .pagePrev,.page-num .pagePrev:hover{background:url(../images/pagePrev.png) no-repeat 3px 8px;}
+.page-num .pageNext,.page-num .pageNext:hover{background:url(../images/pageNext.png) no-repeat 50px 8px;}
+/*pages 20151223-E*/
+
+
+/*新增门店-S*/
+.same-mod{margin-top:25px;}
+.same-mod p{font-family:"simsun";color:#666;font-weight:bold;font-size:14px;}
+.same-infor-box{margin:0 auto;width:825px;background:#72caf2;}
+.common-infor .infor-left{width:450px;}
+.common-infor .infor-right{margin:20px 0 0 62px;color:#666;}
+.common-infor .store-state{margin-left: 40px;}
+.common-infor .store-state li{margin-right:34px;}
+.common-infor .focus{display:inline-block;margin-right:30px;height:28px;line-height:28px;color:#666;}
+.common-infor .infor-right textarea{width:295px;height:118px;text-indent:5px;color:#666;resize:none;outline:none;border:1px solid #ccc;}
+.sgq-cont-list .radio-btn{margin-left:16px;vertical-align:middle;color: #666;line-height:28px;outline:none;}
+.radio-tit{width: 280px;}
+.common-infor .add-cont{margin-left:40px;}
+.oprating-time{margin-left:40px;}
+.oprating-time .item-tit{display:inline-block;width:100px;text-align:right;}
+.oprating-time{color:#666;margin-top:40px;}
+.oprating-time .time-infor{padding:0 20px 0 14px;margin-left:12px;margin-bottom:20px;width:720px;height:188px;border:1px solid #ccc;}
+.oprating-time .time-infor h4{display:inline-block;font-weight:normal;margin-top:12px;}
+.oprating-time .time-infor .item-box{margin-top:26px;line-height:24px;}
+.oprating-time .time-infor .item-box input{vertical-align:middle;text-indent:5px;}
+.oprating-time .time-infor .item-box label{margin-right:35px;}
+.oprating-time .time-infor .time-box{margin-left:-20px;}
+.oprating-time .time-infor .time-box .time-ipt{width:130px;height:24px;line-height:24px;outline:none;border:1px solid #ccc;}
+.oprating-time .sgq-title-btn{display: inline-block; position: relative;width: 85px; height: 30px; margin-top: 9px; border-radius: 4px; padding-left: 30px; background-color: #f99a34; color: #fff; font-weight: bold; line-height: 30px;}
+.oprating-time .sgq-title-btn:hover{background-color: #ff6600; color: #fff;}
+.oprating-time .delete-btn{margin-top:12px;color:#06c}
+/*新增门店-E*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
