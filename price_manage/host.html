@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Host价格同步</title>
+     <link rel="stylesheet" type="text/css" href="../tab/css/base.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/price_manage.css">
+</head>
+<body>
+
+<div class="bk_client_comment host_price">
+     <div class="bread_box">
+          当前位置：<a href="#" class="cur">客户服务</a> > <a href="#" class="blue_link">咨询管理</a>
+     </div>
+     <div class="inquire_box">
+          <div class="form_box  clearfix">
+               <div class="items">
+                    <label class="form_name">应用价格类型：</label><select><option>不限</option><option>Host同步</option><option>手动改价</option><option>锁价</option></select>
+               </div>
+               <div class="items">
+                    <label class="form_name">商品栏目：</label><input class="ipt txt_ipt"></input>
+               </div>
+               <div class="items">
+                     <label class="form_name">商品名称：</label><input class="ipt txt_ipt"></input>
+               </div>
+               <div class="items">
+                    <label class="form_name">价格同步状态：</label><select><option>不限</option><option>正常应用</option><option>失败，沿用原价</option><option>手动强制应用</option></select>
+               </div>
+               <div class="items">
+                    <label class="form_name">同步时间：</label><input type="text" class="Wdate start_time" onClick="WdatePicker()" /><span class="from_to">-</span><input type="text" class="Wdate end_time" onClick="WdatePicker()"/>
+               </div>
+               <div class="items">
+                    <label class="form_name">商品编码：</label><textarea type="text" class="ipt txt_ipt item_code" > 换行可查询多个商品，单次最多500个
+               </textarea>
+               </div>
+               <div class="items">
+                    <label class="form_name">同步价格来源：</label><select><option>Host</option><option>手动改价</option><option>锁价</option></select>
+               </div>
+               <div class="items">
+                    <label class="form_name">商品类型：</label><select><option>不限</option><option>正常商品</option><option>延保商品</option><option>赠品</option><option>会籍年费</option><option>优惠券</option><option>运费商品</option><option>购物卡</option></select>
+               </div>
+               <div class="btn_box">
+                    <a href="javascript:;" class="deep_blue">查询</a><a href="javascript:;">清空</a>
+               </div>
+          </div>
+     </div>
+
+     <div class="table_box">
+          <div class="table_handle clearfix">
+               <a href="javascript:;" class="check_results">批量强制应用Host</a>
+          </div>
+          <table cellpadding="0" cellspacing="0" border="0" class="normal_table" width="980">
+               <thead>
+               <tr>
+                    <th class=" pl20"><input type="checkbox" class="check_all_ipt"></th>
+                    <th>商品编码</th>
+                    <th>商品名称</th>
+                    <th>类目</th>
+                    <th>Host价格</th>
+                    <th>生效价格</th>
+                    <th>应用价格类型</th>
+                    <th>价格同步状态</th>
+                    <th>说明</th>
+                    <th>调价人</th>
+                    <th>销售区域</th>
+                    <th class="pr20">操作</th>
+               </tr>
+               </thead>
+               <tbody>
+               <tr>
+                    <td class="pl20"><input type="checkbox" class="child_ipt"></td>
+                    <td>0000013548 </td>
+                    <td>
+                         <p class="long_txt2 align_left">
+                              <a href="#" class="blue_link">禾煜 裙带菜 150g/袋</a>
+                         </p>
+                    </td>
+                    <td>干菜</td>
+                    <td>
+                         12
+                    </td>
+                    <td>12</td>
+                    <td>Host价格</td>
+                    <td>正常应用</td>
+                    <td><p class="long_txt">正常</p></td>
+                    <td>Host</td>
+                    <td><p class="where">北京店（1565）</p></td>
+                    <td class="pr20 handle_td">
+                         <a href="javascript:;" class="blue_link look_detail">查看详情</a>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="pl20"><input type="checkbox" class="child_ipt"></td>
+                    <td>0000013548</td>
+                    <td>
+                         <p class="long_txt2 align_left">
+                              <a href="#" class="blue_link">禾煜 裙带菜 150g/袋</a>
+                         </p>
+                    </td>
+                    <td> 干菜 </td>
+                    <td>
+                         12
+                    </td>
+                    <td>12</td>
+                    <td>Host价格</td>
+                    <td>正常应用</td>
+                    <td><p class="long_txt">正常</p></td>
+                    <td>Host</td>
+                    <td><p class="where">北京店（1565）</p></td>
+                    <td class="pr20 handle_td">
+                         <a href="javascript:;" class="blue_link look_detail">查看详情</a>
+                         <a href="javascript:;" class="blue_link">强制应用Host</a>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="pl20"><input type="checkbox" class="child_ipt"></td>
+                    <td> 0000013548 </td>
+                    <td>
+                         <p class="long_txt2 align_left">
+                              <a href="#" class="blue_link">禾煜 裙带菜 150g/袋</a>
+                         </p>
+                    </td>
+                    <td>干菜</td>
+                    <td>
+                         12
+                    </td>
+                    <td>12</td>
+                    <td>Host价格</td>
+                    <td>失败，沿用原价</td>
+                    <td><p class="long_txt">Host改价毛利小于-100%</p></td>
+                    <td>Host</td>
+                    <td><p class="where">北京店（1565）</p></td>
+                    <td class="pr20 handle_td">
+                         <a href="javascript:;" class="blue_link look_detail">查看详情</a>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="pl20"><input type="checkbox" class="child_ipt"></td>
+                    <td> 0000013548</td>
+                    <td>
+                         <p class="long_txt2 align_left">
+                              <a href="#" class="blue_link">禾煜 裙带菜 150g/袋</a>
+                         </p>
+                    </td>
+                    <td>干菜</td>
+                    <td> 12 </td>
+                    <td>12</td>
+                    <td>Host价格</td>
+                    <td>正常应用</td>
+                    <td><p class="long_txt">正常</p></td>
+                    <td>Host</td>
+                    <td><p class="where">北京店（1565）</p></td>
+                    <td class=" pr20 handle_td">
+                         <a href="javascript:;" class="blue_link look_detail">查看详情</a>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="pl20"><input type="checkbox" class="child_ipt"></td>
+                    <td> 0000013548</td>
+                    <td>
+                         <p class="long_txt2 align_left">
+                              <a href="#" class="blue_link">禾煜 裙带菜 150g/袋</a>
+                         </p>
+                    </td>
+                    <td>干菜 </td>
+                    <td> 12</td>
+                    <td>12</td>
+                    <td>Host价格</td>
+                    <td>正常应用</td>
+                    <td><p class="long_txt">正常</p></td>
+                    <td>Host</td>
+                    <td><p class="where">北京店（1565）</p></td>
+                    <td class="pr20 handle_td">
+                         <a href="javascript:;" class="blue_link look_detail">查看详情</a>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="pl20"><input type="checkbox" class="child_ipt"></td>
+                    <td> 0000013548</td>
+                    <td>
+                         <p class="long_txt2 align_left">
+                              <a href="#" class="blue_link">禾煜 裙带菜 150g/袋</a>
+                         </p>
+                    </td>
+                    <td> 干菜</td>
+                    <td> 12 </td>
+                    <td>12</td>
+                    <td>Host价格</td>
+                    <td>正常应用</td>
+                    <td><p class="long_txt">正常</p></td>
+                    <td>Host</td>
+                    <td><p class="where">北京店（1565）</p></td>
+                    <td class=" pr20 handle_td">
+                         <a href="javascript:;" class="blue_link look_detail">查看详情</a>
+                    </td>
+               </tr>
+               <tr>
+                    <td class=" pl20"><input type="checkbox" class="child_ipt"></td>
+                    <td> 0000013548 </td>
+                    <td>
+                         <p class="long_txt2 align_left">
+                              <a href="#" class="blue_link">禾煜 裙带菜 150g/袋</a>
+                         </p>
+                    </td>
+                    <td> 干菜 </td>
+                    <td> 12</td>
+                    <td>12</td>
+                    <td>Host价格</td>
+                    <td>正常应用</td>
+                    <td><p class="long_txt">正常</p></td>
+                    <td>Host</td>
+                    <td><p class="where">北京店（1565）</p></td>
+                    <td class="align_right pr20 handle_td">
+                         <a href="javascript:;" class="blue_link look_detail">查看详情</a>
+                    </td>
+               </tr>
+               </tbody>
+          </table>
+          <div class="table_handle page_box clearfix">
+               <div class="page-model clearfix financial-record-page fr">
+                    <div class="yhdbk-page clearfix">
+                         <a href="javascript:;" class="page-prev"><s></s></a>
+                         <a href="javascript:;" class="page-cur">1</a>
+                         <a href="javascript:;">2</a>
+                         <a href="javascript:;">3</a>
+                         <a href="javascript:;">4</a>
+                         <a href="javascript:;">5</a>
+                         <a href="javascript:;">6</a>
+                         <a href="javascript:;">7</a>
+                         <a href="javascript:;">8</a>
+                         <a href="javascript:;">...</a>
+                         <a href="javascript:;">100</a>
+                         <a href="javascript:;" class="page-next"><s></s></a>
+									<span class="page-num">
+										每页显示
+										<select name="" id="">
+                                             <option value="">10</option>
+                                             <option value="">20</option>
+                                             <option value="">30</option>
+                                             <option value="">40</option>
+                                             <option value="">50</option>
+                                        </select>条
+									</span>
+									<span class="page_choose">
+										第<input type="text" class="ipt">页
+									</span>
+                         <a href="javascript:;" class="confirm">确定</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+
+<!--强制应用host弹窗-->
+<div class="bkpopup sucuss_popup force_apply none">
+     <div class="bkpopup_inner">
+          <div class="popup_head">
+               <span class="popup_close">关闭</span>
+          </div>
+          <div class="popup_body">
+               <p>本次Host改价将导致毛利小于 -100%</p>
+               <p>请您慎重确认是否进行本次强制应用？</p>
+               <div class="popup_btn_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="gray">取消</a></div>
+          </div>
+     </div>
+</div>
+<!--强制应用host弹窗-->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/WdatePicker.js"></script>
+<script src="js/script.js"></script>
+<script>
+     //通过查看详情录入弹窗
+     $(".look_detail").click(function(){
+          $(this).PopupDialog({
+               popupClass:'.detail_popup',
+               maskLayer:true
+          });
+     });
+</script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+     <meta charset="UTF-8">
+     <title>价格</title>
+     <link rel="stylesheet" type="text/css" href="css/base.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/price_manage.css">
+</head>
+<body>
+<div class="pri_manag_cont bk_client_comment">
+     <div class="bread_box">
+          当前位置：<a href="#" class="cur">客户服务</a> > <a href="#" class="cur">商品管理</a> > <a href="#" class="blue_link">编辑</a>
+     </div>
+     <div class="trade_intro">
+          <ul class="clearfix">
+               <li class="clearfix"><label class="i_title fl">商品名称：</label><span class="fl curr_item">韩国进口好奇铂金装纸尿裤L码36</span></li>
+               <li class="clearfix"><label class="i_title fl">商品编码：</label><span class="fl">0495468256</span></li>
+               <li class="clearfix"><label class="i_title fl">销售平台：</label><span class="fl">samsclub</span></li>
+               <li class="clearfix"><label class="i_title fl">商品类别：</label><span class="fl">食品 > 南北干货 > 干菜</span></li>
+               <li class="clearfix"><label class="i_title fl">EAN-13：</label><span class="fl">69562598741520</span></li>
+               <li class="clearfix"><label class="i_title fl">销售区域：</label><span class="fl">上海店（4597）</span></li>
+          </ul>
+     </div>
+     <div class="pri_manag_box">
+          <div class="pri_tab_tit">
+              <p class="clearfix">
+                    <a href="javascript:;" class="common_infor">基本信息</a>
+                    <a href="javascript:;">商品描述</a>
+                    <a href="javascript:;">商品图片</a>
+                    <a href="javascript:;">分类属性</a>
+                    <a href="javascript:;">库存</a>
+                    <a href="javascript:;" class="cur">价格</a>
+                    <a href="javascript:;">延保</a>
+               </p>
+          </div>
+          <div class="pri_tab_cont">
+               <div class="lock_price some_mod">
+                    <h3>价格锁定</h3>
+                    <div class="clearfix pri_item if_lock_price">
+                         <label class="fl red_tra_titl"><span class="red_icon" >*</span>是否锁定当前价格：</label>
+                         <label class="fl lock_price_radio"><input class="single" type="radio" name="price" value="是">是&nbsp;</label>
+                         <label class="fl not_lock_price_radio c_yes"><input class="single" type="radio" name="price" value="否" checked>否</label>
+                         <div class="clearfix show">
+                              <div class="remind_ag fl">当锁定价格与host价格相差 <input class="buy_num"> %时，提醒二次确认</div>
+                              <div class="lock_time fl">
+                                   <div class="clearfix">
+                                        <label class="fl red_tra_titl"><span class="red_icon" >*</span>价格锁定时效：</label>
+                                        <input type="text" class="Wdate start_time" onClick="WdatePicker()" />
+                                        <span class="from_to">-</span>
+                                        <input type="text" class="Wdate end_time" onClick="WdatePicker()"/>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+               <div class="item_price some_mod">
+                    <h3>商品价格</h3>
+                    <ul class="clearfix">
+                         <li class="same_sty clearfix">
+                                   <label class="fl red_tra_titl tra-curr"><em class="red_icon" >*</em>当前价格（含税）：</label>
+                                   <input class="inpt fl">
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl red_tra_titl"><em class="red_icon" >*</em>成本价格（去税）：</label>
+                                   <span class="fl">26.99</span>
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl red_tra_titl"><em class="red_icon" >*</em>当前价格（去税）：</label>
+                                   <span class="fl">28.50</span>
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl  red_tra_titl"><em class="red_icon" >*</em>每日限购数量：</label>
+                                   <span class="fl">
+                                        <label><input  class="single" type="radio" name="day_num" checked="checked">不限购</label>&nbsp;
+                                        <label><input  class="single" type="radio"  name="day_num">限购数</label>
+                                        <label><input class="buy_num gray_bg" disabled="disabled"></label>
+                                   </span>
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl  red_tra_titl"><em class="red_icon" >*</em>每单起购数量：</label>
+                                   <input class="inpt fl" value="1">
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl red_tra_titl"><em class="red_icon" >*</em>每单限购数量：</label>
+                                   <span class="fl">
+                                        <label><input  class="single" type="radio" name="every_num" checked>不限购</label>&nbsp;
+                                        <label><input  class="single" type="radio" name="every_num" >限购数</label>
+                                        <input class="buy_num" disabled="disabled">
+                                   </span>
+                              <p class="every_num none">每单限购数量须小于等于每日限购数量</p>
+                              <p class="every_num none">每单限购数须小于等于每用户当日限购数量</p>
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl red_tra_titl"><em class="red_icon" >*</em>每用户当日限购数量：</label>
+                                   <span class="fl">
+                                        <label><input  class="single" type="radio" name="each_num" checked="checked">不限购</label>&nbsp;
+                                        <label><input class="single"  type="radio" name="each_num" >限购数</label>
+                                        <input class="buy_num gray_bg" disabled="disabled">
+                                   </span>
+                              <p class="every_num none" >每用户当日限购数量须小于等于每日限购数量</p>
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl gray_tra_titl"><em class="red_icon" >*</em>子商品单位：</label>
+                                   <input class="inpt fl">
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl gray_tra_titl"><em>*</em>是否大包装商品：</label>
+                                   <label><input  class="single" type="radio" name="package" value="是" checked="checked">是</label>&nbsp;
+                                   <label><input  class="single" type="radio" name="package" value="否">否</label>
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl gray_tra_titl"><em class="red_icon" >*</em>包装内单个商品价格：</label>
+                                   <span class="fl">2.7</span>
+                         </li>
+                         <li class="same_sty clearfix">
+                                   <label class="fl red_tra_titl"><em class="red_icon" >*</em>整包内商品数量：</label>
+                                   <input class="inpt fl">
+                         </li>
+
+                         <li class="same_sty clearfix">
+                                   <label class="fl gray_tra_titl"><em class="red_icon" >*</em>销售税率：</label>
+                                   <span class="fl">0.13</span>
+                         </li>
+                    </ul>
+
+               </div>
+               <div class="area some_mod">
+                    <h3>适用区域</h3>
+                    <table cellspacing="0px" cellpadding="0px">
+                         <tr>
+                              <td class="tb_title"><label><input type="checkbox" name="title" />samsclub</label></td>
+                              <td>
+                                   <ul class="clearfix">
+                                        <li><label><input type="checkbox" name="samsclub" />深圳店（0254 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />北京店（5644 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />上海店（1235 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />大连店（6589 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />广州店（1135 已下架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />福州店（5688 已下架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />杭州店（6987 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />苏州店（3256 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />武汉店（1256 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="samsclub" />常州店（6598 已上架）</label></li>
+                                   </ul>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="tb_title"><label><input type="checkbox" name="title" />1号商城</label></td>
+                              <td>
+                                   <ul class="clearfix">
+                                        <li><label><input type="checkbox" name="1号商城" />深圳店（0254 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="1号商城" />北京店（5644 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="1号商城" />上海店（1235 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="1号商城" />大连店（6589 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="1号商城" />广州店（1135 已下架）</label></li>
+                                        <li><label><input type="checkbox" name="1号商城" />福州店（5688 已下架）</label></li>
+                                   </ul>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="tb_title"><label><input type="checkbox" name="title" />下厨房</label></td>
+                              <td>
+                                   <ul class="clearfix">
+                                        <li><label><input type="checkbox" name="下厨房" />深圳店（0254 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="下厨房" />北京店（5644 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="下厨房" />上海店（1235 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="下厨房" />大连店（6589 已上架）</label></li>
+                                        <li><label><input type="checkbox" name="下厨房" />广州店（1135 已下架）</label></li>
+                                        <li><label><input type="checkbox" name="下厨房" />福州店（5688 已下架）</label></li>
+                                   </ul>
+                              </td>
+                         </tr>
+                    </table>
+               </div>
+
+               <div class="btn_box">
+                    <a href="javascript:;" class="deep_blue">保存</a><a href="javascript:;">取消</a>
+               </div>
+          </div>
+
+     </div>
+</div>
+
+
+
+<!--价格管理-详情弹窗-->
+<div class="bkpopup detail_popup none">
+     <div class="bkpopup_inner">
+          <div class="popup_head">
+               <h3>同步详情</h3>
+               <span class="popup_close">关闭</span>
+          </div>
+          <div class="popup_body">
+
+               <ul class="clearfix">
+                    <li class="clearfix"><span class="detail_cont_titl fl">商品编码：</span><span class="fl detail_infor">1234567</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">商品名称：</span><span class="fl detail_infor">手信坊牛扎饼（原味）240g/盒台湾直邮...</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">类目：</span><span class="fl detail_infor">干货</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">商品类型：</span><span class="fl detail_infor">正常商品</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">商品状态：</span><span class="fl detail_infor">上架</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">Host价格：</span><span class="fl detail_infor">12</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">生效价格：</span><span class="fl detail_infor">12</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">应用价格类型：</span><span class="fl detail_infor">Host价格</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">价格同步状态：</span><span class="fl detail_infor">正常应用</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">说明：</span><span class="fl detail_infor">正常</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">同步价格来源：</span><span class="fl detail_infor">Host来源</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">调价人：</span><span class="fl detail_infor">Host</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">成本/KG（去税)：</span><span class="fl detail_infor">10</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">申请应用价格：</span><span class="fl detail_infor">12</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">申请价格毛利：</span><span class="fl detail_infor">20%</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">生效价格毛利：</span><span class="fl detail_infor">50%</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">生效起始时间:</span><span class="fl detail_infor">12:00:00PM</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">生效结束时间：</span><span class="fl detail_infor">12:00:00PM</span></li>
+                    <li class="clearfix"><span class="detail_cont_titl fl">销售区域:</span><span class="fl detail_infor">北京店（5644）</span></li>
+               </ul>
+          </div>
+     </div>
+</div>
+<!--价格管理-详情弹窗-->
+
+
+
+<!--（修改后的去税价格-去税Host成本）/修改后的去税价格<=0毛利小于等于0，则提示-->
+<!--锁价毛利小于零弹窗-->
+<div class="bkpopup lock_pri_less_popup none">
+     <div class="bkpopup_inner">
+          <div class="popup_head">
+               <h3>提醒</h3>
+               <span class="popup_close">关闭</span>
+          </div>
+          <div class="popup_body">
+               <div class="remind_box">
+                    <p>当前调价后毛利为-15%<0！</p>
+                    <p>请您慎重确认是否进行本次调价？</p>
+                    <ul>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">申请改价为：</label><label class="rem_cont_item fl">16.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">成本：</label><label class="rem_cont_item fl">18.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">改后毛利为：</label><label class="rem_cont_item fl">（16-18）/16=-15%</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">改价类型为：</label><label class="rem_cont_item fl">锁价</label></li>
+                    </ul>
+               </div>
+               <div class="popup_btn_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="gray">取消</a></div>
+
+          </div>
+     </div>
+</div>
+
+<!--如果单纯手工改价，无锁价限制，则只校验毛利。-->
+<!--手工改价毛利小于零-弹窗-->
+<div class="bkpopup lock_pri_less_popup none">
+     <div class="bkpopup_inner">
+          <div class="popup_head">
+               <h3>提醒</h3>
+               <span class="popup_close">关闭</span>
+          </div>
+          <div class="popup_body">
+               <div class="remind_box">
+                    <p>当前调价后毛利为-15%<0！</p>
+                    <p>请您慎重确认是否进行本次调价？</p>
+                    <ul>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">申请改价为：</label><label class="rem_cont_item fl">16.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">成本：</label><label class="rem_cont_item fl">18.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">改后毛利为：</label><label class="rem_cont_item fl">（16-18）/16=-15%</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">改价类型为：</label><label class="rem_cont_item fl">手工改价</label></li>
+                    </ul>
+               </div>
+               <div class="popup_btn_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="gray">取消</a></div>
+
+          </div>
+     </div>
+</div>
+
+
+<!--当锁价与当前生效价价格价差绝对值在n%（含，以上）的时候，当点击提交时，自动计算且跳出弹框进行二次确认提醒页面-->
+<!--锁价当前调价超出阈值-弹窗-->
+<div class="bkpopup lock_pri_less_popup none">
+     <div class="bkpopup_inner">
+          <div class="popup_head">
+               <h3>提醒</h3>
+               <span class="popup_close">关闭</span>
+          </div>
+          <div class="popup_body">
+               <div class="remind_box">
+                    <p>当前调价已超出阈值600%！</p>
+                    <p>请您慎重确认是否进行本次调价？</p>
+                    <ul>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">申请改价为：</label><label class="rem_cont_item fl">16.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">原生效价为：</label><label class="rem_cont_item fl">18.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">价差提醒阈值为：</label><label class="rem_cont_item fl">2元</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">实际价差为：</label><label class="rem_cont_item fl">28-16=12元</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">改价类型为：</label><label class="rem_cont_item fl">锁价</label></li>
+                    </ul>
+               </div>
+               <div class="popup_btn_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="gray">取消</a></div>
+
+          </div>
+     </div>
+</div>
+
+
+<!--如果锁价同时触发改价阈值与毛利提醒，则同时展示在一个页面上-->
+<!--锁价当前调价超出阈值 毛利小于零-弹窗-->
+<div class="bkpopup lock_pri_less_popup none">
+     <div class="bkpopup_inner">
+          <div class="popup_head">
+               <h3>提醒</h3>
+               <span class="popup_close">关闭</span>
+          </div>
+          <div class="popup_body">
+               <div class="remind_box">
+                    <p>当前调价已超出阈值600%，毛利为-15%<0！</p>
+                    <p>请您慎重确认是否进行本次调价？</p>
+                    <ul>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">申请改价为：</label><label class="rem_cont_item fl">16.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">原生效价为：</label><label class="rem_cont_item fl">18.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">成本：</label><label class="rem_cont_item fl">18.00元/KG（去税）</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">价差提醒阈值为：</label><label class="rem_cont_item fl">28-16=12元</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">实际价差为：</label><label class="rem_cont_item fl">28-16=12元</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">改后毛利为：</label><label class="rem_cont_item fl">（16-18）/16=-15%</label></li>
+                         <li class="remind_cont clearfix"><label class="rem_cont_titl fl">改价类型为：</label><label class="rem_cont_item fl">锁价</label></li>
+                    </ul>
+               </div>
+               <div class="popup_btn_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="gray">取消</a></div>
+          </div>
+     </div>
+</div>
+
+<!--保存成功-弹窗-->
+<div class="bkpopup sucuss_popup none">
+     <div class="bkpopup_inner">
+          <div class="popup_head">
+               <span class="popup_close">关闭</span>
+          </div>
+          <div class="popup_body">
+               <p class="pop_sucuss">保存成功</p>
+               <div class="popup_btn_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="gray">取消</a></div>
+          </div>
+     </div>
+</div>
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/WdatePicker.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
